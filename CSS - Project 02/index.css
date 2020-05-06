@@ -9,6 +9,10 @@ body, h1 {
 p {
     display: inline;
 }
+span {
+    font-weight: bolder;
+    
+}
 
 .middle {
     background-color: red;
