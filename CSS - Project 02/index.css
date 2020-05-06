@@ -1,30 +1,10 @@
 body, h1 {
     margin: 0;
+    text-align: center;
+
 }
 
-.top {
+.header {
     background-color: #2a7886;
     
-}
-p {
-    display: inline;
-}
-span {
-    font-weight: bolder;
-    
-}
-
-.middle {
-    background-color: red;
-    width: 200px;
-    height: 200px;
-    border: solid 20px;
-    margin-left: 260px;
-}
-.bottom {
-    background-color: blue;
-    width: 200px;
-    height: 200px;
-    border: solid 10px;
-    margin-left: 500px;
 }
