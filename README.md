@@ -1,4 +1,4 @@
-# Resume plugin sites
+# Resume plugin site
 
 colorhunt.co ---> 
 https://colorhunt.co/palette/171695
