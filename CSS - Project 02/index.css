@@ -1,10 +1,39 @@
 body, h1 {
     margin: 0;
     text-align: center;
+    font-family: 'Merriweather', serif;
 
 }
 
-.header {
+h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 52px;
+    
+}
+h2, h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.top-container {
     background-color: #2a7886;
+    position: relative;
+    padding-top: 100px;
+}
+.tcloud {
+    position: absolute; 
+    right: 300px;
+    top: 100px;
+}
+.bcloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+.middle-container {
+    background-color: blue;
+    
+}
+.bottom-container {
+    background-color: plum;
     
 }
