@@ -1,39 +1,96 @@
-body, h1 {
+body {
     margin: 0;
     text-align: center;
-    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    color: #512b58;
 
 }
 
 h1 {
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 52px;
+    font-family: 'Bad Script', cursive;
+    font-size: 60px;
+    color: #2a7886;
     
 }
 h2, h3 {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: Montserrat;
+    color: #2a7886;
+}
+h5 {
+    font-family: monospace;
+    font-size: 20px;
+}
+.profile {
+    position: relative;
+    width: 80%;
+    height: auto;
+}
+.ProfilePic {
+    border-radius: 90%;
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    
+}
+.ProfileInfo {
+    position: absolute;
+    top: 20px;
+    left: 500px;
+    
+}
+
+
+
+hr {
+    
+    background-color: transparent;
+    border-style: none none dotted none;
+    border-bottom-color: #79bac1;
+    border-bottom-width: 12px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 8%;
 }
 
 .top-container {
-    background-color: #2a7886;
+    background-color: #79bac1;
     position: relative;
     padding-top: 100px;
 }
 .tcloud {
     position: absolute; 
-    right: 300px;
+    right: 200px;
     top: 100px;
 }
 .bcloud {
     position: absolute;
-    left: 300px;
+    left: 200px;
     bottom: 300px;
 }
 .middle-container {
-    background-color: blue;
+    background-color: #f1f3f4;
     
 }
-.bottom-container {
-    background-color: plum;
-    
+.skill-img{
+    border-radius: 100%;
+    background-color: white;
+    padding: 8px;
+    height: auto;
+    width: 60px;
 }
+
+.skill-img:hover {
+    background-color: gold;
+}
+li {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #2a7886;
+    color: whitesmoke;
+    position: relative;
+    text-decoration: none;
+
+}
+
