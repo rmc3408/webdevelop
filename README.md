@@ -9,7 +9,6 @@ https://colorhunt.co/palette/171695
 emoji Images --->
 https://emojipedia.org/sushi/
 
-
 Professional Images
 https://www.flaticon.com/
 https://unsplash.com/
@@ -26,3 +25,13 @@ https://www.w3schools.com/cssref/css_websafe_fonts.asp
 
 Button Generator
 https://www.cssbuttongenerator.com/
+
+### ----------------------------
+### ----   Web Templates   -----
+### ----------------------------
+https://ui-patterns.com/
+https://www.awwwards.com/
+https://dribbble.com/
+
+## Web design
+https://balsamiq.cloud/
