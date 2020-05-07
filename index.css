@@ -1,7 +1,7 @@
 body {
     margin: 0;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: monospace;
     color: #512b58;
 
 }
@@ -17,12 +17,13 @@ a {
 }
 
 h1 {
-    font-family: 'Bad Script', cursive;
-    font-size: 60px;
+    font-family: 'Parisienne', cursive;
+    font-size: 5rem;
     color: #2a7886;
     margin-top: 0;
-    padding-top: 20px;
+    padding-top: 70px;
     margin-bottom: 0;
+    z-index: 2;
     
 }
 h2, h3 {
@@ -36,8 +37,8 @@ h5 {
 }
 .profile {
     position: relative;    
-    margin: 30px auto 30px auto;
-    width: 60%;
+    margin-left: 15%;
+    margin-right: 15%;
     height: 400px;
 }
 .profile-img {
@@ -69,9 +70,10 @@ h5 {
     position: inherit;
     width: 50%;
     height:auto;
-    margin: auto;
-    margin-top: 80px;
+    margin: 80px auto 0px auto;
     text-align: justify;
+    line-height: 0.8;
+    
 }
 
 .skill-img {
@@ -82,7 +84,10 @@ h5 {
     float: left;
     margin-right: 30px; 
 }
-
+.ongoing-info {
+    padding-bottom: 50px;
+}
+ 
 hr {
     background-color: transparent;
     border-style: none none dotted none;
@@ -94,13 +99,15 @@ hr {
 }
 .top-container {
     background-color: #79bac1;
+    z-index: -10;
     position: relative;
     
     
 }
 .tcloud {
     position: absolute; 
-    right: 200px;
+    z-index: 1;
+    right: 100px;
     top: 100px;
 }
 .bcloud {
