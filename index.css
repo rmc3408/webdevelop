@@ -45,12 +45,12 @@ h5 {
     border-radius: 90%;
     position: absolute;
     top: 80px;
-    left: 20px;
+    left: 50px;
     
 }
 .profile-info {
     position: absolute;
-    top: 20px;
+    top: 40px;
     left: 260px;
     line-height: 2;
     text-align: justify;
@@ -69,7 +69,7 @@ h5 {
 .skill-row {
     position: inherit;
     width: 50%;
-    height:auto;
+    height: auto;
     margin: 80px auto 0px auto;
     text-align: justify;
     line-height: 0.8;
@@ -79,13 +79,15 @@ h5 {
 .skill-img {
     float: right;
     margin-left: 30px; 
+    
 }
 .ongoing-img {
     float: left;
-    margin-right: 30px; 
+    margin-right: 5rem; 
 }
 .ongoing-info {
     padding-bottom: 50px;
+    text-align: right;
 }
  
 hr {
@@ -96,6 +98,7 @@ hr {
     padding-top: 3rem;
     margin-bottom: 80px;
     width: 8%;
+    opacity: 0.3;
 }
 .top-container {
     background-color: #79bac1;
