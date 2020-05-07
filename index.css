@@ -35,6 +35,7 @@ h5 {
     margin-top: 0;
     font-family: monospace;
     font-size: 20px;
+    padding-bottom: 1rem;
 }
 .profile {
     position: relative;    
@@ -138,19 +139,6 @@ footer {
 
 .btn {
 	background-color:#79bac1;
-	-webkit-border-top-left-radius:28px;
-	-moz-border-radius-topleft:28px;
-	border-top-left-radius:28px;
-	-webkit-border-top-right-radius:28px;
-	-moz-border-radius-topright:28px;
-	border-top-right-radius:28px;
-	-webkit-border-bottom-right-radius:28px;
-	-moz-border-radius-bottomright:28px;
-	border-bottom-right-radius:28px;
-	-webkit-border-bottom-left-radius:28px;
-	-moz-border-radius-bottomleft:28px;
-	border-bottom-left-radius:28px;
-    text-indent:0;
 	display:inline-block;
 	color:#ffffff;
 	font-family:monospace;
