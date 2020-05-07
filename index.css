@@ -10,6 +10,7 @@ h1 {
     font-family: 'Bad Script', cursive;
     font-size: 60px;
     color: #2a7886;
+    margin-bottom: 0;
     
 }
 h2, h3 {
@@ -17,6 +18,7 @@ h2, h3 {
     color: #2a7886;
 }
 h5 {
+    margin-top: 0;
     font-family: monospace;
     font-size: 20px;
 }
@@ -26,21 +28,24 @@ h5 {
     margin-right: 20%;
     height: auto;
 }
+.skills {
+    position: static;
+    margin-top: 250px;
+
+}
 .ProfilePic {
     border-radius: 90%;
     position: absolute;
-    top: 20px;
-    left: 200px;
+    top: 40px;
+    left: 20px;
     
 }
 .ProfileInfo {
     position: absolute;
     top: 20px;
-    left: 500px;
+    left: 300px;
     
 }
-
-
 
 hr {
     
@@ -50,6 +55,7 @@ hr {
     border-bottom-width: 12px;
     padding-top: 30px;
     padding-bottom: 30px;
+    letter-spacing: 1em;
     width: 8%;
 }
 
