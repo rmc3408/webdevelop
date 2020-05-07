@@ -26,12 +26,10 @@ https://www.w3schools.com/cssref/css_websafe_fonts.asp
 Button Generator
 https://www.cssbuttongenerator.com/
 
-### ----------------------------
-### ----   Web Templates   -----
-### ----------------------------
+Web Templates
 https://ui-patterns.com/
 https://www.awwwards.com/
 https://dribbble.com/
 
-## Web design
+## Build a Web template
 https://balsamiq.cloud/
