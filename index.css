@@ -22,7 +22,8 @@ h5 {
 }
 .profile {
     position: relative;
-    width: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
     height: auto;
 }
 .ProfilePic {
