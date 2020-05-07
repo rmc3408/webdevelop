@@ -12,7 +12,8 @@ body {
     text-decoration: none;
 }
 a {
-    padding-right: 12px;
+    padding-top: 12px;
+    padding-right: 50px;
     color: #f1f3f4;
     text-decoration: none;
 }
@@ -31,10 +32,12 @@ h2, h3 {
     font-family: Montserrat;
     color: #2a7886;
 }
-h5 {
+h6 {
     margin-top: 0;
+    margin-bottom: 0;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 10px;
+    padding-top: 20px;
     padding-bottom: 1rem;
 }
 .profile {
@@ -138,26 +141,15 @@ footer {
 }
 
 .btn {
-	background-color:#79bac1;
+	
 	display:inline-block;
 	color:#ffffff;
-	font-family:monospace;
 	font-size:14px;
-	font-weight:bold;
-	font-style:normal;
-    height:42px;
-	line-height:42px;
-    width:129px;
 	text-decoration:none;
 	text-align:center;
-    text-shadow:1px 1px 20px #ffffff;
-    
+        
 }
 .btn:hover {
-    background-color:#512b58;
-    
+    font-size: 20px;
 }
-.btn:active {
-	position:relative;
-	top:1px;
-}
+
