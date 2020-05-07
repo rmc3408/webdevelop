@@ -5,6 +5,13 @@ body {
     color: #512b58;
 
 }
+.nav {
+    background-color: #2a7886;
+    padding: 1rem auto 1rem auto;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
 h1 {
     font-family: 'Bad Script', cursive;
     font-size: 60px;
@@ -53,27 +60,27 @@ h5 {
     top:400px;
 }
 .skill-row {
-    position: static;
+    position: inherit;
     width: 50%;
+    height:auto;
     margin: auto;
     margin-top: 80px;
     text-align: justify;
 }
-.skill-img, .ongoing-img {
-    
-        
+
+.skill-img {
+    float: right;
+    margin-left: 30px; 
 }
-.skill-img:hover, .ongoing-img:hover {
-    background-color: gold;
-}
+
 .skill-info {
     
 }
 .ongoing-img {
-    border-radius: 90%;   
+    
 }
 .ongoing-info {
-    float: left;
+    
 }
 
 
@@ -88,11 +95,10 @@ hr {
     margin-bottom: 4rem;
     width: 8%;
 }
-
 .top-container {
     background-color: #79bac1;
     position: relative;
-    padding-top: 100px;
+    
 }
 .tcloud {
     position: absolute; 
@@ -109,10 +115,14 @@ hr {
     
 }
 
+.separator {
+    background-color: #512b58;
+    padding: 3px;
+    
+}
 footer {
     background-color: #2a7886;
     color: whitesmoke;
-    position: relative;
     text-decoration: none;
 
 }
