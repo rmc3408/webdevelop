@@ -7,8 +7,12 @@ body {
 }
 .nav {
     background-color: #2a7886;
-    padding: 1rem auto 1rem auto;
-    color: whitesmoke;
+    padding: 20px;
+    text-decoration: none;
+}
+a {
+    padding-right: 12px;
+    color: #f1f3f4;
     text-decoration: none;
 }
 
@@ -16,6 +20,8 @@ h1 {
     font-family: 'Bad Script', cursive;
     font-size: 60px;
     color: #2a7886;
+    margin-top: 0;
+    padding-top: 20px;
     margin-bottom: 0;
     
 }
@@ -72,32 +78,24 @@ h5 {
     float: right;
     margin-left: 30px; 
 }
-
-.skill-info {
-    
-}
 .ongoing-img {
-    
+    float: left;
+    margin-right: 30px; 
 }
-.ongoing-info {
-    
-}
-
-
 
 hr {
-    
     background-color: transparent;
     border-style: none none dotted none;
     border-bottom-color: #79bac1;
     border-bottom-width: 12px;
-    padding-top: 6rem;
-    margin-bottom: 4rem;
+    padding-top: 3rem;
+    margin-bottom: 80px;
     width: 8%;
 }
 .top-container {
     background-color: #79bac1;
     position: relative;
+    
     
 }
 .tcloud {
@@ -117,7 +115,7 @@ hr {
 
 .separator {
     background-color: #512b58;
-    padding: 3px;
+    padding: 2px;
     
 }
 footer {
