@@ -18,10 +18,12 @@ https://pixabay.com/
 
 Favicon
 https://www.favicon.cc/
+https://fontawesome.com/
 
 Web Safe Fonts and embbed Link in head section
 https://fonts.google.com/
 https://www.w3schools.com/cssref/css_websafe_fonts.asp
+https://fontawesome.com/
 
 Button Generator
 https://www.cssbuttongenerator.com/
