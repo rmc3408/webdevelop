@@ -77,3 +77,13 @@ h3 {
     position: absolute;
     right: 40px;
 }
+.box-shadow {
+    margin-left: 20px;
+}
+
+#footer {
+    text-align: center;
+    background-color: #fd7e14;
+    color: white;
+    padding-bottom: 40px;
+}
