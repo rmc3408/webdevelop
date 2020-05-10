@@ -1,13 +1,79 @@
 body{
     font-family: 'Ubuntu', sans-serif;
 }
+.brandname {
+    font-size: 3rem;
+
+}
+.title-image {
+    width: 60%;
+}
 
 #title {
     background-color: #fd7e14;
+    color: white;
 }
 h1 {
     font-family: 'Leckerli One', cursive;
     padding-top: 30%;
+    padding-bottom: 50px;
     line-height: 1.5rem;
-    font-size: 3.6rem;
+    
+}
+.doggie-rotation {
+    width: 60%;
+    padding-top:20%;
+    transform: rotate(25deg);
+}
+h3 {
+    font-weight: bolder;
+    font-size: 2rem;
+    font-family: 'Ubuntu';
+}
+.row {
+    text-align: center;
+    padding: 10% 5%
+}
+#features~p {
+    padding: 0 5px 0 5px;
+}
+.fa-paw, .fa-heart, .fa-dog {
+    font-size: 60px;
+    color: #fd7e14;
+    margin-bottom: 15px;
+    
+}
+/* testemonials */
+
+#testimonials {
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #fd7e14;
+    color: white;
+}
+#testimonials h2 {
+    font-size: x-large;
+    font-family: 'Montserrat-bold';
+}
+#testimonials img {
+    width: 15%;
+    border-radius: 80%;
+}
+#press {
+    text-align: center;
+    background-color: #fd7e14;
+    color: white;
+    padding-bottom: 40px;
+}
+.press-img {
+    width: 15%;
+    padding: 8px 12px 20px 0;
+}
+.carousel-control-prev-icon {
+    position: absolute;
+    left: 40px;
+}
+.carousel-control-next-icon {
+    position: absolute;
+    right: 40px;
 }
