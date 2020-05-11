@@ -7,7 +7,7 @@ var foodBig = food.toUpperCase();
 alert(myText.toUpperCase());
 //// OR  /////
 console.log(prompt("convert Text? ").toUpperCase());
-consle.log("hello");
+
 
 // Slice Method 
 var myText = "Javascript";
