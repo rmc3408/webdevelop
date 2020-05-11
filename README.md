@@ -1,7 +1,11 @@
 # Webdevelop
 
+
 -- Visual Studio Code
 -- Pesticide for Chrome
+-- Beautify 
+-- toogle multiple columns
+
 
 BootStrap ---> 
 https://getbootstrap.com/
@@ -37,5 +41,8 @@ https://ui-patterns.com/
 https://www.awwwards.com/
 https://dribbble.com/
 
-# Build a Web template --->
+Build a Web template --->
 https://balsamiq.cloud/
+
+Mobile Friendly Google test -->
+https://search.google.com/test/mobile-friendly
