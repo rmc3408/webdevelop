@@ -36,13 +36,16 @@ https://fontawesome.com/
 Button Generator --->
 https://www.cssbuttongenerator.com/
 
-Web Templates --->
+Inspire with Web Templates --->
+https://www.canva.com/
 https://ui-patterns.com/
 https://www.awwwards.com/
 https://dribbble.com/
+https://collectui.com/
 
 Build a Web template --->
 https://balsamiq.cloud/
+https://www.canva.com/
 
 Mobile Friendly Google test -->
 https://search.google.com/test/mobile-friendly
