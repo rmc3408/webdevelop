@@ -15,16 +15,26 @@ body{
 }
 h1 {
     font-family: 'Leckerli One', cursive;
-    padding-top: 30%;
+    padding-top: 18%;
     padding-bottom: 50px;
     line-height: 1.5rem;
     
 }
 .doggie-rotation {
-    width: 60%;
-    padding-top:20%;
+    width: 50%;
+    padding-top:30px;
     transform: rotate(25deg);
+    position: absolute;
+    z-index: 1;
+    
 }
+
+#features {
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
 h3 {
     font-weight: bolder;
     font-size: 2rem;
