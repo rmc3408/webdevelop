@@ -1,4 +1,11 @@
 
+// Capitalizing first Letter//
+var myText = prompt("convert Text? ");
+var FirstLetter = myText.slice(0,1).toUpperCase();
+var restLetter = myText.slice(1,myText.length).toLowerCase();
+console.log("Hello, "+FirstLetter+restLetter);
+
+
 // UpperCase / Lowercase Method 
 var food = prompt("convert Text? ");
 var foodSmall = food.toLowerCase();
@@ -30,6 +37,8 @@ alert("You have written "+countTexted+ " charaters, and left "+leftTweet);
 // Variables Declare and Assign //
 var myname = "Raphael";
 var DOB = "July, 1981"
+
+// enter user input - PROMT 
 var age = prompt("what is your age?");
 
 
