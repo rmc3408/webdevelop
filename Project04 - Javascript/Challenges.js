@@ -1,3 +1,19 @@
+
+////////////////////
+//   FIZZ BUZZ    //
+////////////////////
+
+var output = [];
+
+
+
+
+
+
+////////////////////
+// BMI CALCULATOR //
+////////////////////
+
 var weight = prompt("How many kg? ");
 var height = prompt("how tall? ");
 
