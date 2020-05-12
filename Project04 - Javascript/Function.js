@@ -1,3 +1,4 @@
+
 // function (parameters) and RETURN message
 
 /1/
@@ -22,9 +23,8 @@ console.log(getMilk(10, 1.5));
 
 
 
-//////////////
 // function camelCasing () {   Syntax;  } 
-//////////////
+
 function main() {
     lineOdd();    // function inside function
 }
