@@ -1,5 +1,12 @@
 
+// push() will add element to the end
+var guessList = ["luana", "raphael", "ivan", "emma"]; 
+guessList.push("alessandro");
 
+
+// pop() will add element to the end and return the value //
+var guessList = ["luana", "raphael", "ivan", "emma"]; 
+var outName = guessList.pop();
 
 
 
