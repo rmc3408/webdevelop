@@ -1,16 +1,22 @@
-# Webdevelop
-
+# Softwares
 
 -- Visual Studio Code
 -- Pesticide for Chrome
 -- Beautify 
 -- toogle multiple columns
+-- Chrome DevTools
 
 
-BootStrap ---> 
+# Javascript
+Chrome DevToops -> Sources -> Snippets.
+
+
+# BootStrap 
 https://getbootstrap.com/
 https://bootsnipp.com/
+https://fontawesome.com/
 
+# HTML
 colorhunt.co ---> 
 https://colorhunt.co/palette/171695
 
@@ -27,6 +33,12 @@ https://pixabay.com/
 Favicon --->
 https://www.favicon.cc/
 https://fontawesome.com/
+
+# CSS
+
+Mobile Friendly Google test -->
+https://search.google.com/test/mobile-friendly
+
 
 Web Safe Fonts and embbed Link in head section --->
 https://fonts.google.com/
@@ -47,5 +59,3 @@ Build a Web template --->
 https://balsamiq.cloud/
 https://www.canva.com/
 
-Mobile Friendly Google test -->
-https://search.google.com/test/mobile-friendly

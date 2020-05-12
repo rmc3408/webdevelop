@@ -1,11 +1,41 @@
+
+
+//        FOR loops   , keep run for many n times //
+//   for (var start; end; iteration++) {syntax} //
+
+output = [];
+for (var count = 1; count <= 10; count++) {
+    count % 3 == 0 ? output.push("fizz") : output.push(count); 
+}
+console.log(output);
+
+
+
+
+
+
+
+
+
+// While loops , keep run whenever statement is TRUE //
+output = [];
+count = 1;
+while (count<=10) {
+
+    count % 3 == 0 ? output.push("fizz") : output.push(count); 
+    count++;
+}
+console.log(output);
+
+
+
+
 // Ternary decision Loop Stamenent //
 var sentence = "Raphael is a good guy";
 var wordOne = "bad";
-
-
+///     QUESTION  (if)       ? TRUE : FALSE //
 console.log(`the word : ${wordOne}" is 
 ${sentence.includes(wordOne) ? ''   : 'not'} part of sentence`);
-///     QUESTION  (if)       ? TRUE : FALSE //
 
 
 
