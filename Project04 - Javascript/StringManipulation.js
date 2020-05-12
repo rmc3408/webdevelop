@@ -82,10 +82,10 @@ alert(myname+DOB);
 
 
 
-
+// names of variables and function in camelCasing 
 // Variables Declare and Assign //
-var myname = "Raphael";
-var DOB = "July, 1981"
+var myName = "Raphael";
+var dOB = "July, 1981"
 
 
 

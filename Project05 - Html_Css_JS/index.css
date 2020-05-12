@@ -1,4 +1,12 @@
+.huge {
+    font-size: 3.5rem;
+}
+
 
 button:active {
     color:red;
+}
+
+.invisible {
+    visibility: hidden;
 }
