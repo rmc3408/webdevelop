@@ -1,23 +1,24 @@
-
-
 // function (parameters) and RETURN message
 
+/1/
 function getMilk(money, cost) {
     console.log(CalculateMoney(money, cost) + " bottles of milk");
-    return CalculateChange(money, cost);
+    console.log(CalculateChange(money, cost));
 }
 
+/2/ 
 function CalculateMoney(inicialMoney, costperBottle) {
     var num = inicialMoney / costperBottle;
     return Math.floor(num);
 
 }
+/3/ 
 function CalculateChange(inicialMoney, costperBottle) {
     var num = inicialMoney % costperBottle;
-    return "will get back $ " + num +  " of change.";
+    return "He will get back $ " + num +  " of change.";
 
 }
-console.log("And he " + getMilk(10, 1.5));
+console.log(getMilk(10, 1.5));
 
 
 

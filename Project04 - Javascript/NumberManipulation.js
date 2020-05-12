@@ -1,5 +1,11 @@
+// Math Built-in Methods.
 
+var rnd = Math.random();  // Show number from 0 - 0,99999... //
+var rnd = Math.random(6);
 
+Math.floor();
+Math.ceil();
+Math.pow(2,3);
 
 // increment or decrement
 var x = 60;
