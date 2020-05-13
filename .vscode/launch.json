@@ -15,7 +15,7 @@
             "name": "Launch debug.html",
             "type": "chrome",
             "request": "launch",
-            "file": "${workspaceFolder}/debug.html"
+            "file": "${workspaceFolder}/Project06 - Debugging/debug.html"
         },
     
           ]
