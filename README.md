@@ -6,6 +6,8 @@
 -- toogle multiple columns
 -- Chrome DevTools
 
+# Debugger
+use debugger; command  + (hold SHIFT and press Enter) -> function
 
 # Javascript
 Chrome DevToops -> Sources -> Snippets.
