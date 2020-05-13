@@ -1,0 +1,61 @@
+body {
+    margin: 5%;
+    font-family: cursive;
+    text-align: center;
+    background-color: #fdcb9e;
+
+}
+
+/* Title div*/
+
+.trophy-img {
+    display: inline-block;
+    width: 5rem;
+    padding: 0 30px 0 30px;
+    visibility: hidden;
+
+}
+.trophy-img-on {
+    visibility: visible;
+
+}
+
+.result {
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    color: #3f3f44;
+    font-size: 4rem;
+}
+
+/* Table div*/
+.table {
+    background-image: url("images/table.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    border: 10px solid black;
+    color: #f7f7f7;
+    
+
+
+}
+
+
+.playerH,
+.playerC {
+    display: inline-block;
+    margin: 50px 100px 100px 100px;
+
+
+}
+.dice-img {
+    width: 50%;
+}
+
+footer {
+    font-size: 1.2rem;
+    color: #3f3f44;
+    margin: 60px auto 10px auto;
+}
