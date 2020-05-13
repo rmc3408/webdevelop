@@ -5,7 +5,7 @@ var diceOne = Math.ceil(Math.random() * 6);
 var diceTwo = Math.ceil(Math.random() * 6);
 
 document.getElementById('human').setAttribute("src", `images/${imageList[diceOne-1]}`);
-document.getElementById('computer').setAttribute("src", `images/${imageList[diceTwo-1]}`);
+document.getElementsByClassName('dice-img')[1].setAttribute("src", `images/${imageList[diceTwo-1]}`);
 // var filename = "images/dice" + diceOne + ".png";
 
 if (diceOne > diceTwo) {
