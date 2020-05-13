@@ -5,13 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
+            "name": "Launch localhost",
+            "type": "chrome",
             "request": "launch",
-            "name": "Launch Program",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\Project05 - Html_Css_JS\\index.js"
-        }
-    ]
+            "url": "http://localhost/mypage.html",
+            "webRoot": "${workspaceFolder}/wwwroot"
+        },
+        {
+            "name": "Launch debug.html",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceFolder}/debug.html"
+        },
+    
+          ]
 }
