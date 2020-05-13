@@ -1,5 +1,22 @@
 
+/////////////////////////////////////////
+// function camelCasing () {   Syntax;  } 
+/////////////////////////////////////////
+
+
+function main() {
+    lineOdd();    // function inside function
+}
+function lineOdd() { 
+    putBeeper = 2;
+}
+
+
+
+
+
 // function (parameters) and RETURN message
+// parameters have arguments (variables or function)
 
 /1/
 function getMilk(money, cost) {
@@ -23,11 +40,13 @@ console.log(getMilk(10, 1.5));
 
 
 
-// function camelCasing () {   Syntax;  } 
 
-function main() {
-    lineOdd();    // function inside function
-}
-function lineOdd() { 
-    putBeeper = 2;
+
+
+/////////////////////////////////////////
+// IF pass function name as argument 
+//   Do not use quotation nor ()       //
+
+function Calculator (money, CalculateChange) { 
+    return money;
 }
