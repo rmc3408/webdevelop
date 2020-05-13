@@ -1,8 +1,11 @@
 // ---------------------------------------//
-//     COPY AND PASTE ON DEBUG CONSOLE    //
+//     COPY AND PASTE YOUR CODE HERE      //
 // ---------------------------------------//
 
-// ADD DEBUGGER AT BEGINNING
+/*
+        1 - ADD DEBUGGER AT BEGINNING
+        2 - ADD BREAKPOINTS
+*/
 
 debugger;
 function getMilk(money, cost) {
