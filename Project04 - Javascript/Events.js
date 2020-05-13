@@ -1,3 +1,6 @@
+------------------
+-addEventListener
+------------------
 
 // Do specific type function from listen a target.//
 
@@ -5,7 +8,13 @@
       document.querySelector('.drum').addEventListener("click", handleClick);   
 document.querySelectorAll('.drum')[i].addEventListener("click", handleClick);
 
-// TYPE is input = action by the user
+/*
+ TYPE is input = action by the user
+ LISTEN is output = Response by computer. It is  function name as argument = neither quotation nor ()
 
-// LISTEN is output = Response by computer.
-// LISTEN is function name as argument = neither quotation nor ()
+      Type
+    mouse            click
+    keyboard         keypress event.key
+    open file        load
+
+
