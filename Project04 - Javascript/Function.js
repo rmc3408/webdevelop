@@ -36,7 +36,7 @@ function CalculateChange(inicialMoney, costperBottle) {
     return "He will get back $ " + num +  " of change.";
 
 }
-console.log(getMilk(10, 1.5));
+getMilk(10, 1.5);
 
 
 
