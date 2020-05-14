@@ -53,14 +53,7 @@ footer {
   opacity: 0.8;
 }
 
-.colorpressed {
-  color: black;
-} 
 
-.pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
-  opacity: 0.5;
-}
 
 .red {
   color: red;
@@ -82,4 +75,13 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+
+.colorpressed {
+  background-color: black;
+} 
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
 }

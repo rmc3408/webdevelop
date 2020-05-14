@@ -1,17 +1,23 @@
 
-// Using mouve events to trigger 
+// Using keyboard events to trigger inside whole document
+document.addEventListener("keypress", handleKey);
 
+
+// Using mouve events to trigger 
 var numDrums = document.querySelectorAll('.drum').length;
 for (var choice = 0; choice < numDrums; choice++) {
     document.querySelectorAll('.drum')[choice].addEventListener("click", handleClick);
 }
 
+
+
+// functions
 function handleClick () {
     
     console.log(this);    //Show HTML identity from object in document//
     var option = this.innerHTML;
 
-    buttonColor(option);
+   
     buttonAnimation(option);
 
     switch (option) {
@@ -48,15 +54,11 @@ function handleClick () {
         break;
     }
 } 
-
-
-
-
-// Using keyboard events to trigger inside whole document
-document.addEventListener("keypress", playKey);
-
-function playKey() {
+function handleKey() {
     var option = event.key;
+
+    buttonAnimation(option);
+    
     switch (option) {
         case "w":
         var audio = new Audio('sounds/tom-1.mp3');
@@ -93,11 +95,13 @@ function playKey() {
 
 }
 
-
-
 function buttonAnimation(currentKey) {
     document.querySelector("."+currentKey).classList.add('pressed');
     document.querySelector("."+ currentKey).classList.add('colorpressed');
-    setTimeout(document.querySelector("."+currentKey).classList.remove('colorpressed'), 100);
-    setTimeout(document.querySelector("."+currentKey).classList.remove('pressed'), 100);
+    
+    setTimeout(function () {
+        document.querySelector("."+currentKey).classList.remove('pressed');
+        document.querySelector("."+ currentKey).classList.remove('colorpressed');
+    
+    }, 150);
 }
