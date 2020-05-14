@@ -116,5 +116,10 @@ document.otherEventListener('keypress', function (event) {
     console.log(event);
 }   );
 
+/*                  Summarizing:
 
+The user will trigger a mouse/keyboard/input event and 
+computer will reply executing anonimous function passing
+a object as argument to produce a event.
+*/
 
