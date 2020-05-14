@@ -8,7 +8,7 @@
         "type": "chrome",
         "request": "launch",
         "name": "index.html",
-        "file": "${workspaceFolder}/Project08 - JQuery/index.html"
+        "file": "${workspaceFolder}/Project09 - SimomGame/index.html"
         
     },
     {
