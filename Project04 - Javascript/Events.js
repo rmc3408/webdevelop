@@ -1,14 +1,15 @@
-------------------
--addEventListener
-------------------
+/*               ------------------
+                  addEventListener
+                ------------------
 
-// Do specific type function from listen a target.//
+ADD a process to keep listening ALL the time for a action of the user
+and this user activity will be process in a function.
 
-      //        TARGET               .addEventListener( type  , listen     );  
+               TARGET               .addEventListener( type  , listen     );  
       document.querySelector('.drum').addEventListener("click", handleClick);   
 document.querySelectorAll('.drum')[i].addEventListener("click", handleClick);
 
-/*
+
  TYPE is input = action by the user
  LISTEN is output = Response by computer. It is  function name as argument = neither quotation nor ()
 
@@ -19,11 +20,7 @@ document.querySelectorAll('.drum')[i].addEventListener("click", handleClick);
 */
 
 
-
-
-
-
-// Can Execute a function called playKey !!!!!
+// EXAMPLE -> Execute a function called playKey !
 
 document.addEventListener("keypress", playKey);
 
@@ -52,15 +49,15 @@ function playKey() {
      This unique event has several unique properties and values.
 
      it will send this object properties  
-     to function named or Anonimous function.
+     to function named or Anonimous function (created for one use only).
 */
 
 document.addEventListener("click", function() {console.log("key pressed")});
 
-//----------------- object property ARE EVENTS -> mouse or key event -------->>//
-/*    
-        You can call this specific or object event in anomimous function as argument.
-*/
+//------- object property passing ARE EVENTS -> mouse or key event -------->>//
+// You can call this specific or object event 
+//     in anomimous function as argument.
+
 
 
 
@@ -72,7 +69,7 @@ document.addEventListener("click", function() {console.log("key pressed")});
 /*
     .addEventListener(type, High Order Function (callback Function);
 
-it take function (argument) but argument is a function
+it take function (argument) but argument is a object or function
 
 *///---//---/---//---//---//---//---//---//---//---//---//---//---//---//
 

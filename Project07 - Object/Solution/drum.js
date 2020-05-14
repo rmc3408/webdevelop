@@ -9,8 +9,10 @@ for (var choice = 0; choice < numDrums; choice++) {
 function handleClick () {
     
     console.log(this);    //Show HTML identity from object in document//
-    this.style.color = "black";
     var option = this.innerHTML;
+
+    buttonColor(option);
+    buttonAnimation(option);
 
     switch (option) {
         case "w":
@@ -47,12 +49,14 @@ function handleClick () {
     }
 } 
 
+function buttonColor(currentkey) {
+    document.querySelector("."+ currentKey).classList.add('colorpressed');
+    setTimeout(document.querySelector("."+currentKey).classList.remove('colorpressed'), 100);
+}
 
 
 
 // Using keyboard events to trigger inside whole document
-
-
 document.addEventListener("keypress", playKey);
 
 function playKey() {
@@ -91,4 +95,11 @@ function playKey() {
         break;
     }
 
+}
+
+
+
+function buttonAnimation(currentKey) {
+    document.querySelector("."+currentKey).classList.add('pressed');
+    setTimeout(document.querySelector("."+currentKey).classList.remove('pressed'), 100);
 }
