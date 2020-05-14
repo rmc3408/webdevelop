@@ -49,10 +49,6 @@ function handleClick () {
     }
 } 
 
-function buttonColor(currentkey) {
-    document.querySelector("."+ currentKey).classList.add('colorpressed');
-    setTimeout(document.querySelector("."+currentKey).classList.remove('colorpressed'), 100);
-}
 
 
 
@@ -101,5 +97,7 @@ function playKey() {
 
 function buttonAnimation(currentKey) {
     document.querySelector("."+currentKey).classList.add('pressed');
+    document.querySelector("."+ currentKey).classList.add('colorpressed');
+    setTimeout(document.querySelector("."+currentKey).classList.remove('colorpressed'), 100);
     setTimeout(document.querySelector("."+currentKey).classList.remove('pressed'), 100);
 }
