@@ -5,6 +5,16 @@
 -- Beautify 
 -- toogle multiple columns
 -- Chrome DevTools
+-- Debugger for Chrome
+
+
+
+# J Query
+https://jquery.com/download/
+https://developers.google.com/speed/libraries#jquery
+
+
+---> [Minify JS and CSS] => https://www.minifier.org/
 
 
 # Javascript

@@ -8,15 +8,15 @@
         "type": "chrome",
         "request": "launch",
         "name": "index.html",
-        "file": "${workspaceFolder}/Project06 - Debugging/index.html"
+        "file": "${workspaceFolder}/Project08 - JQuery/index.html"
         
     },
-        {
-            "name": "debug.html",
-            "type": "chrome",
-            "request": "launch",
-            "file": "${workspaceFolder}/Project06 - Debugging/debug.html"
-        },
+    {
+        "name": "debug.html",
+        "type": "chrome",
+        "request": "launch",
+        "file": "${workspaceFolder}/Project06 - Debugging/debug.html"
+    },
     
-          ]
+                        ]
 }
