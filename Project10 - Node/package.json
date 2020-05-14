@@ -1,0 +1,26 @@
+{
+  "name": "webdevelop",
+  "version": "1.0.0",
+  "description": "This is compile of WebDevelop course up to section 17",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmc3408/webdevelop.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Raphael Molinaro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmc3408/webdevelop/issues"
+  },
+  "homepage": "https://github.com/rmc3408/webdevelop#readme",
+  "dependencies": {
+    "superheroes": "^3.0.0",
+    "supervillains": "^3.0.0"
+  }
+}

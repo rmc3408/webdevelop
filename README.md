@@ -6,8 +6,12 @@
 -- toogle multiple columns
 -- Chrome DevTools
 -- Debugger for Chrome
+-- JSHint
 
 
+# Node
+https://nodejs.org/docs/latest-v13.x/api/
+npm -> https://www.npmjs.com/
 
 # J Query
 https://jquery.com/download/

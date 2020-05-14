@@ -1,0 +1,9 @@
+# Softwares
+
+-- Visual Studio Code
+-- Pesticide for Chrome
+-- Beautify 
+-- toogle multiple columns
+-- Chrome DevTools
+-- Debugger for Chrome
+-- JSHint
