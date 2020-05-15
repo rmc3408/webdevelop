@@ -9,14 +9,21 @@
 -- JSHint
 
 
-# Node
+
+
+
+
+# NODE.JS
 https://nodejs.org/docs/latest-v13.x/api/
-npm -> https://www.npmjs.com/
+
+NPM          -> https://www.npmjs.com/
+express      -> https://expressjs.com/
+
+
 
 # J Query
 https://jquery.com/download/
 https://developers.google.com/speed/libraries#jquery
-
 
 ---> [Minify JS and CSS] => https://www.minifier.org/
 
