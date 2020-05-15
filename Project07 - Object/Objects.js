@@ -1,4 +1,6 @@
-// Object with property, values and function 
+/**
+ *  Object with property, values and function
+ */  
 
 var cleaner1 = {
     name:"Raphael",
