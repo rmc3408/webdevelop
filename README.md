@@ -7,6 +7,9 @@
 -- Chrome DevTools
 -- Debugger for Chrome
 -- JSHint
+-- NODE JS ( with NPM) 
+-- expressJS (via NPM install -g)
+-- nodemon (via NPM install -g)
 
 
 
