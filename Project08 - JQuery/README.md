@@ -6,7 +6,11 @@ The position of JQuery Google CDN must come before javascript.
 
 - Events 
 
-type:
+AddEventListener don't work in JQuery.
+
+
+type:            -- Command list --
+
 MOUSE           = click, dblclick, mouseover, mouseenter, mouseleave
 KEYBOARD        = keypress, keydown, keyup
 FORM            = submit, change, focus, blur
