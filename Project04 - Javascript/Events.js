@@ -52,7 +52,7 @@ function playKey() {
      to function named or Anonimous function (created for one use only).
 */
 
-document.addEventListener("click", function() {console.log("key pressed")});
+document.addEventListener("click", function() {console.log("key pressed");});
 
 //------- object property passing ARE EVENTS -> mouse or key event -------->>//
 // You can call this specific or object event 

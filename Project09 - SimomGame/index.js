@@ -1,3 +1,5 @@
+
+
 var buttonColor = ['red','yellow','blue','green'];
 var gamePattern = [];
 var userPattern = [];
@@ -16,6 +18,9 @@ function nextSequence() {
 document.addEventListener('keydown', function(){
     if (event.key === "a") {
         sequenceOne();
+        
+
+
     }
     else if (event.key === "r"){
         location.reload();
@@ -25,11 +30,12 @@ document.addEventListener('keydown', function(){
 });
 
 function sequenceOne() {
+    $('h1').text("Level " + (level + 1)); 
     var randomChosenColour = nextSequence();
     gamePattern.push(randomChosenColour);
     $("."+randomChosenColour).fadeOut(200).fadeIn(200);
-    var song = new Audio('sounds/'+randomChosenColour+'.mp3');
-    song.play();
+    playSound(randomChosenColour);
+    
 
 }
 
@@ -42,8 +48,8 @@ function userHandle() {
     var userChosenColour = this.id;
     userPattern.push(userChosenColour); // save in User array 
     $("."+userChosenColour).fadeOut(200).fadeIn(200); //visual effect
-    var song = new Audio('sounds/'+userChosenColour+'.mp3');
-    song.play(); //  play song
+    playSound(userChosenColour);
+    animatedPress(userChosenColour);
     userPattern.forEach(comparePattern); // game check
 
 
@@ -51,16 +57,40 @@ function userHandle() {
 
 //* * Game check.
 
-function comparePattern(item, index) {
+function comparePattern(item, index) {  // check items inside arrays.
     
-    if (item == gamePattern[index]) {
-        console.log("USER: "+ item +" == COMP: "+ gamePattern[index]);
+    if (item == gamePattern[index]) {   //If correct
+        
+        
+        if (item == gamePattern[gamePattern.length - 1]) { // If Last item
+            level++;
+            sequenceOne();
+
+
+        }
 
     } else {
         console.log("USER: "+ item +" != COMP: "+ gamePattern[index]);
+        $(document).css("background-color", 'red');
+
         endgame = true;
     }
 
 }
 
+//** Game Effects */
 
+function playSound(input){              //  play song
+    var song = new Audio('sounds/'+input+'.mp3');
+    song.play(); 
+    
+}
+
+function animatedPress(currentColour) {   // background effect on button
+    $("#"+currentColour).addClass("pressed");
+
+    setTimeout(function(){
+        $("#"+currentColour).removeClass("pressed");
+        }, 300);
+    
+}

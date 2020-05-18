@@ -12,13 +12,14 @@
  **/
 
 
-
 $("h1").text("good bye"); // change text
+$("h1").html("Good <em>bye<em>"); // innerHTML
 
 
 $('h1').css("color", "red"); // Assign a value
 $("h1").addClass("big margin-50");
-$("h1").html("Good <em>bye<em>"); // innerHTML
+
+
 $("img").attr("src"); // change attributes
 $("a").attr("href", "http://www.bing.ca");
 $("button").remove();
