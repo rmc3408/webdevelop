@@ -4,7 +4,8 @@ var buttonColor = ['red','yellow','blue','green'];
 var gamePattern = [];
 var userPattern = [];
 var level = 0;
-endgame = false;
+endUserSequence = true;
+continueGame = true;
 
 
 
@@ -12,11 +13,19 @@ endgame = false;
 //* * Game start and Reload
 document.addEventListener('keydown', function(){
     if (event.key === "a") {
-        while(endgame){
-            sequenceOne();
-            $('.btn').click(userHandle);
-
+        
+        while (continueGame) {
+            
+            gameSequence();
+        
+            while(endUserSequence){
+                $('.btn').click(userHandle);
+                userPattern.forEach(comparePattern); // game check
+    
+            }
+            endUserSequence = true;
         }
+        
         
         
 
@@ -29,10 +38,10 @@ document.addEventListener('keydown', function(){
 
 });
 
-function sequenceOne() {
+function gameSequence() {
     
     $('h1').text("Level " + (level+1)); 
-    var randomChosenColour = randomSequence();
+    var randomChosenColour = nextSequence();
     gamePattern.push(randomChosenColour);
     $("."+randomChosenColour).fadeOut(200).fadeIn(200);
     playSound(randomChosenColour);
@@ -51,7 +60,7 @@ function userHandle() {
     $("."+userChosenColour).fadeOut(200).fadeIn(200); //visual effect
     playSound(userChosenColour);
     animatedPress(userChosenColour);
-    userPattern.forEach(comparePattern); // game check
+    
 
 
 }
@@ -64,12 +73,11 @@ function userHandle() {
 
 function comparePattern(item, index) {  // check items inside arrays.
     
-    if (item == gamePattern[index]) {   //If correct
-        
-        
+    if (userPattern.length == gamePattern.length) {   //check size
+             
         if (item == gamePattern[gamePattern.length - 1]) { // If Last item
             level++;
-            sequenceOne();
+            endUserSequence = false;
 
 
         }
@@ -104,7 +112,7 @@ function animatedPress(currentColour) {   // background effect on button
         }, 300);
     
 }
-function randomSequence() {
+function nextSequence() {
     
     var rnd = Math.floor(Math.random() * 4);
     return buttonColor[rnd];
