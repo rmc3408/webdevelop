@@ -1,8 +1,8 @@
 var buttonColor = ['red','yellow','blue','green'];
 var gamePattern = [];
-let userPattern = [];
+var userPattern = [];
 var level = 0;
-
+endgame = false;
 
 function nextSequence() {
     
@@ -35,15 +35,31 @@ function sequenceOne() {
 
 //* * User Mouse clicking
 
+
 $('.btn').click(userHandle);
 
 function userHandle() {
     var userChosenColour = this.id;
-    console.log(userChosenColour);
-    userPattern.push(userChosenColour);
-    $("."+userChosenColour).fadeOut(200).fadeIn(200);
+    userPattern.push(userChosenColour); // save in User array 
+    $("."+userChosenColour).fadeOut(200).fadeIn(200); //visual effect
     var song = new Audio('sounds/'+userChosenColour+'.mp3');
-    song.play();
+    song.play(); //  play song
+    userPattern.forEach(comparePattern); // game check
+
+
+}
+
+//* * Game check.
+
+function comparePattern(item, index) {
+    
+    if (item == gamePattern[index]) {
+        console.log("USER: "+ item +" == COMP: "+ gamePattern[index]);
+
+    } else {
+        console.log("USER: "+ item +" != COMP: "+ gamePattern[index]);
+        endgame = true;
+    }
 
 }
 
