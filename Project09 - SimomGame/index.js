@@ -4,7 +4,7 @@ var buttonColor = ['red','yellow','blue','green'];
 var gamePattern = [];
 var userPattern = [];
 var level = 0;
-endUserSequence = true;
+userChecked = true;
 continueGame = true;
 
 
@@ -13,22 +13,8 @@ continueGame = true;
 //* * Game start and Reload
 document.addEventListener('keydown', function(){
     if (event.key === "a") {
-        
-        while (continueGame) {
-            
             gameSequence();
-        
-            while(endUserSequence){
-                $('.btn').click(userHandle);
-                userPattern.forEach(comparePattern); // game check
-    
-            }
-            endUserSequence = true;
-        }
-        
-        
-        
-
+            $('.btn').click(userHandle);
 
     }
     else if (event.key === "r"){
@@ -39,8 +25,7 @@ document.addEventListener('keydown', function(){
 });
 
 function gameSequence() {
-    
-    $('h1').text("Level " + (level+1)); 
+         
     var randomChosenColour = nextSequence();
     gamePattern.push(randomChosenColour);
     $("."+randomChosenColour).fadeOut(200).fadeIn(200);
@@ -55,14 +40,16 @@ function gameSequence() {
 //* * User Mouse clicking
 
 function userHandle() {
-    var userChosenColour = this.id;
-    userPattern.push(userChosenColour); // save in User array 
-    $("."+userChosenColour).fadeOut(200).fadeIn(200); //visual effect
-    playSound(userChosenColour);
-    animatedPress(userChosenColour);
+    do {
+        var userChosenColour = this.id;
+        userPattern.push(userChosenColour); // save in User array 
+        $("."+userChosenColour).fadeOut(200).fadeIn(200); //visual effect
+        playSound(userChosenColour);
+        animatedPress(userChosenColour);
+
+        userPattern.forEach(comparePattern); // game check for each click
+    } while (userChecked);
     
-
-
 }
 
 
@@ -73,29 +60,22 @@ function userHandle() {
 
 function comparePattern(item, index) {  // check items inside arrays.
     
-    if (userPattern.length == gamePattern.length) {   //check size
-             
-        if (item == gamePattern[gamePattern.length - 1]) { // If Last item
+    if (item == gamePattern[index]) { 
+        console.log("Same color!");
+        if (item == gamePattern[gamePattern.length - 1]) {
             level++;
-            endUserSequence = false;
-
-
+            console.log("All same color!");
+            alert("Level " + level + " complete");
+            gameSequence();    
         }
-
+     
     } else {
-        console.log("USER: "+ item +" != COMP: "+ gamePattern[index]);
-        $(document).css("background-color", 'red');
-
-        endgame = true;
+        $('h1').text("Game Over");
+        $(document.body).css("background-color", 'red');
+        userChecked = false;
     }
 
 }
-
-
-
-
-
-
 
 //** Game Effects */
 
@@ -116,6 +96,7 @@ function nextSequence() {
     
     var rnd = Math.floor(Math.random() * 4);
     return buttonColor[rnd];
+    $('h1').text("Level " + (level+1));
     
 
 }
