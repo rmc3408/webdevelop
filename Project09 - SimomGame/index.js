@@ -31,7 +31,7 @@ function gameSequence() {
 function nextSequence() {
 
     var rnd = Math.floor(Math.random() * 4);
-    
+
     return buttonColor[rnd];
 
 
@@ -66,7 +66,7 @@ function userHandle() {
 function comparePattern(item, index) { // check items inside arrays.
 
     if (item == gamePattern[index]) {
-        
+
         if (userPattern.length == gamePattern.length) {
 
             level++;
