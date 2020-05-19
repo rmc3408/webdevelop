@@ -31,17 +31,32 @@ app.post("/", function(req,res){
     //console.log(req.body.crypto);
     //console.log(req.body.fiat);
 
+
     //TODO: It will request a JSON with info BTC+USD and other info
-    request("https://apiv2.bitcoinaverage.com/indices/global/ticker/BTCUSD", function(error, response, body){
+    request("https://apiv2.bitcoinaverage.com/indices/global/ticker/" + req.body.crypto + req.body.fiat , function(error, response, body) {
         
         // It will get response from external server
-        // of one of object key+value in JSON format (statuscode, body).
+        // Get key+value in JSON format (statuscode, body).
         //console.log(response.statuscode);
+        // console.log(response.body);
 
-        console.log(response.body);
+        //TODO: Convert from JSON to JS Object and use it.
+        var flatdata = JSON.parse(body);
+        var price = flatdata.last;
+        //console.log(price);
+
+        var avgprice = flatdata.averages.week;
+        //console.log(avgprice);
+        
+
+
+        res.write("<p> The current date is "+ flatdata.display_timestamp + " </p>");
+        res.write("<h1>The price of " + req.body.crypto + 
+        " is "+ price + " " + req.body.fiat +" </h1>");
+
+        res.send();
 
     });
 
-
-
 });
+

@@ -9,22 +9,23 @@
 * Chrome DevTools
 * Debugger for Chrome
 * JSHint
-- NODE JS 
+* NODE JS 
   - NPM 
   - expressJS (via NPM install -g)
   - nodemon (via NPM install -g)
-
+* JSON viewer Awesome
 
 
 ### GitHub
 https://learngitbranching.js.org/
 
 
-### NODE.JS
+
+### Node.JS
 https://nodejs.org/docs/latest-v13.x/api/
 
-NPM          -> https://www.npmjs.com/
-express      -> https://expressjs.com/
+1. NPM -> https://www.npmjs.com/
+2. Express      -> https://expressjs.com/
 
 
 
@@ -32,7 +33,7 @@ express      -> https://expressjs.com/
 https://jquery.com/download/
 https://developers.google.com/speed/libraries#jquery
 
----> [Minify JS and CSS] => https://www.minifier.org/
+[Minify JS and CSS](https://www.minifier.org/)
 
 
 ### Javascript
@@ -40,7 +41,7 @@ Chrome DevToops -> Sources -> Snippets.
 
 
 ### BootStrap 
-https://getbootstrap.com/
+https://getbootstrap.com/ 
 https://bootsnipp.com/
 https://fontawesome.com/
 
@@ -71,8 +72,9 @@ https://balsamiq.cloud/
 https://www.canva.com/
 
 
+
 ### HTML
-colorhunt.co ---> 
+colorhunt ---> 
 https://colorhunt.co/palette/171695
 
 emoji Images --->
