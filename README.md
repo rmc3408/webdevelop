@@ -41,23 +41,6 @@ https://getbootstrap.com/
 https://bootsnipp.com/
 https://fontawesome.com/
 
-# HTML
-colorhunt.co ---> 
-https://colorhunt.co/palette/171695
-
-emoji Images --->
-https://emojipedia.org/sushi/
-
-Professional Images --->
-https://www.flaticon.com/
-https://unsplash.com/
-https://www.joomlashine.com/
-https://tineye.com/
-https://pixabay.com/
-
-Favicon --->
-https://www.favicon.cc/
-https://fontawesome.com/
 
 # CSS
 
@@ -84,3 +67,21 @@ Build a Web template --->
 https://balsamiq.cloud/
 https://www.canva.com/
 
+
+# HTML
+colorhunt.co ---> 
+https://colorhunt.co/palette/171695
+
+emoji Images --->
+https://emojipedia.org/sushi/
+
+Professional Images --->
+https://www.flaticon.com/
+https://unsplash.com/
+https://www.joomlashine.com/
+https://tineye.com/
+https://pixabay.com/
+
+Favicon --->
+https://www.favicon.cc/
+https://fontawesome.com/
