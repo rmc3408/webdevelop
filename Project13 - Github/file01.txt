@@ -2,3 +2,6 @@ This is file 01
 
 Line 03
 
+Next line to compared
+
+working directory
