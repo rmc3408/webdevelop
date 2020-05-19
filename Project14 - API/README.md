@@ -1,4 +1,4 @@
-# API
+# API / JSON
 
 
 ## ANY API
@@ -29,3 +29,17 @@ To make a contact to external API call using our express server.
 ` LOCAL Server(node/express) <-- API --> External Server `
 Use REQUEST npm module. 
 - npm install request
+
+
+# JSON
+
+```
+var wardrobe = {
+    door:2,
+    drawer:2,
+    color:"red
+}
+```
+
+* To Convert in JSON
+` JSON.stringify(wardrobe); `

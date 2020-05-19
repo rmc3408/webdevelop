@@ -35,7 +35,7 @@ app.post("/", function(req,res){
     request("https://apiv2.bitcoinaverage.com/indices/global/ticker/BTCUSD", function(error, response, body){
         
         // It will get response from external server
-        // of one of object key in JSON (statuscode, body).
+        // of one of object key+value in JSON format (statuscode, body).
         //console.log(response.statuscode);
 
         console.log(response.body);
