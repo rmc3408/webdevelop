@@ -1,23 +1,26 @@
-# Softwares
-
--- Visual Studio Code
--- Pesticide for Chrome
--- Beautify 
--- toogle multiple columns
--- Chrome DevTools
--- Debugger for Chrome
--- JSHint
--- NODE JS ( with NPM) 
--- expressJS (via NPM install -g)
--- nodemon (via NPM install -g)
+# Web Development
 
 
+### Software
+* Visual Studio Code
+* Pesticide for Chrome
+* Beautify 
+* toogle multiple columns
+* Chrome DevTools
+* Debugger for Chrome
+* JSHint
+* NODE JS 
+  ** NPM 
+  ** expressJS (via NPM install -g)
+  ** nodemon (via NPM install -g)
 
-# GitHub
+
+
+### GitHub
 https://learngitbranching.js.org/
 
 
-# NODE.JS
+### NODE.JS
 https://nodejs.org/docs/latest-v13.x/api/
 
 NPM          -> https://www.npmjs.com/
@@ -25,24 +28,24 @@ express      -> https://expressjs.com/
 
 
 
-# J Query
+### J Query
 https://jquery.com/download/
 https://developers.google.com/speed/libraries#jquery
 
 ---> [Minify JS and CSS] => https://www.minifier.org/
 
 
-# Javascript
+### Javascript
 Chrome DevToops -> Sources -> Snippets.
 
 
-# BootStrap 
+### BootStrap 
 https://getbootstrap.com/
 https://bootsnipp.com/
 https://fontawesome.com/
 
 
-# CSS
+### CSS
 
 Mobile Friendly Google test -->
 https://search.google.com/test/mobile-friendly
@@ -68,7 +71,7 @@ https://balsamiq.cloud/
 https://www.canva.com/
 
 
-# HTML
+### HTML
 colorhunt.co ---> 
 https://colorhunt.co/palette/171695
 
