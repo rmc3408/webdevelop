@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Ticker</title>
+</head>
+<body>
+    <h1>BitCoin Converter Ticker</h1>
+    <form action="/" method="post">  <!--Form will POST on route /-->
+    <select name="crypto">  <!-- This is dropdown menu for cryptocurrency-->
+        <option value="BTC">Bitcoin</option>
+        <option value="ETH">Etherium</option>
+        <option value="LTC">Litecoin</option>
+    </select>
+    <select name="fiat">  <!-- This is dropdown menu for fiat currency-->
+        <option value="BRL">Brazilian Real</option>
+        <option value="CAD">Canadian Dollar</option>
+        <option value="USD">American Dollar</option>
+    </select>
+
+    <button type="submit">SEND</button> <!-- Button = Form-->
+                                         <!-- input = action on JS-->
+    
+    </form>
+    
+</body>
+</html>
