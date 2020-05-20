@@ -1,11 +1,5 @@
 # API / JSON
 
-### MailChimp
-
-<<<<<<< HEAD
-* API KEY:   f0679f27a55fd90412b5ef954423874b-us18
-* Audience ID:  f6f5e44c55.
-
 
 ### Basic HTTP authorization - any API
 ``` 
