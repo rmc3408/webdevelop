@@ -32,8 +32,25 @@ app.post("/", function(req, res){
     var email = req.body.email;
 
     console.log(fname, lname, email);
+    //res.send("<h2>Full Name: "+ fname +" "+ lname + " ,email: "+email+ "</h2>");
 
-    res.send("<h2>Full Name: "+ fname +" "+ lname + " ,email: "+email+ "</h2>");
+    var option = {
+        url: 'https://us18.api.mailchimp.com/3.0/lists/f6f5e44c55',
+        method: 'POST',
+        user: 'rmc3408:f0679f27a55fd90412b5ef954423874b-us18'
+    };
 
+    request(option, function (error, response, body){
+        if(error){
+            console.log(error);
+
+        }else{
+            console.log(response.statusCode);
+        }
+
+    });
 
 });
+
+
+
