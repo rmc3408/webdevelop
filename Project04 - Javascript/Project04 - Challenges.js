@@ -2,11 +2,11 @@
 //   Fibonnacci   //
 ////////////////////
 
-function fibonacciGenerator(n) {
+function fibonacciGenerator(num) {
 
     var output = [0, 1];
 
-    for (var i = 0; i < n; i++) {
+    for (var i = 0; i < num; i++) {
         output.push(output[i] + output[i + 1]);
     }
 
