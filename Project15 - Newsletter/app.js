@@ -36,7 +36,7 @@ app.post("/", function (req, res) {
     var lname = req.body.last;
     var email = req.body.email;
     var username = "rmc3408";
-    var password = "f0679f27a55fd90412b5ef954423874b-<4CODE>";
+    var password = "f0679f27a55fd90412b5ef954423874b-us18";
     var auth = username + " " + password;
     
 
