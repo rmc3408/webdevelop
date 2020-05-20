@@ -13,7 +13,7 @@ app.listen(3000, function () {
 
 app.set('view engine', 'ejs');
 
-var newAddItems = ["Sleep"];
+let newAddItems = ["Sleep"]; //? global variable = outside function//
 
 app.get("/", function (req, res) {
     var today = new Date();
@@ -28,14 +28,15 @@ app.get("/", function (req, res) {
 
     var newday = today.toLocaleDateString("pt-BR", option);
     res.render('index', { sevenDays: newday, task: newAddItems});
-    
+    // newAddItem outside
 });
 
 app.post("/", function(req, res){
     
     item = req.body.newItem;
     newAddItems.push(item);
-    res.redirect("/"); //** Send taskItem to app.get */
+    res.redirect("/"); 
+//** newAddItem can acess function app.get (local variable) */
 
     //? YOU cannot run this, it will miss sevendays in app.get
     //? -> res.render('index', { task: taskItem });
