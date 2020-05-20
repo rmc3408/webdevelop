@@ -2,6 +2,7 @@
 
 ### MailChimp
 
+<<<<<<< HEAD
 * API KEY:   f0679f27a55fd90412b5ef954423874b-us18
 * Audience ID:  f6f5e44c55.
 
@@ -30,3 +31,5 @@ var username = "rmc3408";
 
 });
 ```
+=======
+>>>>>>> 52fce16966bf3e88c63606c0c5465a6fbeb6a513

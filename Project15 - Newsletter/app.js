@@ -32,28 +32,57 @@ app.post("/", function (req, res) {
     var fname = req.body.first;
     var lname = req.body.last;
     var email = req.body.email;
-
     var username = "rmc3408";
     var password = "f0679f27a55fd90412b5ef954423874b-us18";
     var auth = username + " " + password;
+    
 
     console.log(fname, lname, email);
     //res.send("<h2>Full Name: "+ fname +" "+ lname + " ,email: "+email+ "</h2>");
+  
 
+
+    //? info designated from HTML to mailchimp.
+    var rawdata = {
+        members: [ 
+            {
+            email_address: email,
+            status: "subscribed",
+            merge_fields: {FNAME: fname, LNAME: lname }
+            } ]
+        
+    };
+
+
+    var jdata = JSON.stringify(rawdata);
+
+    
+
+    
+    //? Object to mailChimp.
     var option = {
         url: 'https://us18.api.mailchimp.com/3.0/lists/f6f5e44c55',
         method: 'POST',
-        headers: {                  //! Basic HTTP authorization
-            "Authorization": auth}
+        headers: { "Authorization": auth }, //! Basic HTTP authorization
+        body: jdata
+            
     };
+
+    
 
     request(option, function (error, response, body) {
         if (error) {
-            console.log(error);
+            console.log("failure");
+            res.sendFile(__dirname+"/failure.html");
+
+        } else if (response.statusCode == 200) {
+            console.log("sucess");
+            res.sendFile(__dirname+"/sucess.html");
 
         } else {
-            console.log(response.statusCode);
-            console.log('body : ', body);
+            res.send("Something goes wrong!");
+            console.log(error);
+            
         }
 
     });
