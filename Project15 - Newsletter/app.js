@@ -55,8 +55,7 @@ app.post("/", function (req, res) {
 
 
     var jdata = JSON.stringify(rawdata);
-
-    
+   
 
     
     //? Object to mailChimp.
@@ -71,20 +70,18 @@ app.post("/", function (req, res) {
     
 
     request(option, function (error, response, body) {
-        if (error) {
-            console.log("failure");
-            res.sendFile(__dirname+"/failure.html");
-
+        console.log(response.statusCode);
+        if (error == 401) {
+            res.send("<h1>401 - Authetication Error</h1>");
+        
         } else if (response.statusCode == 200) {
-            console.log("sucess");
             res.sendFile(__dirname+"/sucess.html");
-
+    
         } else {
-            res.send("Something goes wrong!");
-            console.log(error);
-            
+            res.sendFile(__dirname+"/failure.html");
         }
-
+        
+  
     });
 
 });

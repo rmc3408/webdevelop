@@ -23,6 +23,8 @@ https://learngitbranching.js.org/
 
 ### Node.JS
 https://nodejs.org/docs/latest-v13.x/api/
+https://nodejs.org/api/synopsis.html
+https://nodejs.org/api/https.html#https_https_get_url_options_callback
 
 1. NPM -> https://www.npmjs.com/
 2. Express      -> https://expressjs.com/
