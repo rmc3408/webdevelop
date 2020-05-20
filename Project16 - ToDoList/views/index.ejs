@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+</head>
+<body>
+
+
+    <!-- To display output <%= %> inside HTML -->
+    <!-- To NOT display output <% %>  inside HTML -->
+    
+    <% if (sevenDays == "Wednesday" || sevenDays == 'Saturday') {%>
+        <h1 style="background-color: yellowgreen;"> Display current day = <%=sevenDays%></h1>
+    <% } else {%>
+        <h1><%=sevenDays%></h1>
+    <% } %> 
+
+    <!-- Make appear new input form -->
+    
+    <ul>
+ <!--  <li>Array of new item : <%=task%></li>    -->  
+        <li>WorkOut</li>
+        <li>Grocery</li>
+        <% task.forEach(item => { %>
+         <li><%=item%></li>
+        <% }); %>
+
+    </ul>
+    <form action="/" method="post">
+    <input type="text" name="newItem" placeholder="+ new item">
+    <button type="submit">Add</button>
+    </form>
+
+
+
+
+
+</body>
+</html>
