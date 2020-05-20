@@ -8,15 +8,18 @@
 <body>
     <h1>BitCoin Converter Ticker</h1>
     <form action="/" method="post">  <!--Form will POST on route /-->
-    <select name="crypto">  <!-- This is dropdown menu for cryptocurrency-->
+    
+        <input type="text" name="amount" placeholder="  $$$" >
+    
+        <select name="crypto">  <!-- This is dropdown menu for cryptocurrency-->
         <option value="BTC">Bitcoin</option>
         <option value="ETH">Etherium</option>
         <option value="LTC">Litecoin</option>
     </select>
     <select name="fiat">  <!-- This is dropdown menu for fiat currency-->
-        <option value="USD">American Dollar</option>
-        <option value="BRL">Brazilian Real</option>
-        <option value="CAD">Canadian Dollar</option>
+        <option value="USD">US Dollar</option>
+        <option value="GBP">GB Pound</option>
+        <option value="CAD">EU Euro</option>
         
     </select>
 
