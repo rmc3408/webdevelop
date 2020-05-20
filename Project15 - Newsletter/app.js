@@ -14,7 +14,9 @@ app.use(express.static("public")); //folder where all local files
 
 ////////////////////////////
 
-app.listen(3000, function () {
+//! Dynamic PORT from HEROKU or port 3000 for Local server
+app.listen(process.env.PORT || 3000, function () {  
+
     console.log("server running on port 3000");
 });
 
@@ -34,7 +36,7 @@ app.post("/", function (req, res) {
     var lname = req.body.last;
     var email = req.body.email;
     var username = "rmc3408";
-    var password = "f0679f27a55fd90412b5ef954423874b-<4CODE>";
+    var password = "f0679f27a55fd90412b5ef954423874b-us18";
     var auth = username + " " + password;
     
 
