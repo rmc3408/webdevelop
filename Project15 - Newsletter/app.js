@@ -85,3 +85,10 @@ app.post("/", function (req, res) {
     });
 
 });
+
+app.post("/failure", function(req, res){
+    res.redirect("/");      //! Redirect to main route.
+
+
+} );
+
