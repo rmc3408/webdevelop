@@ -33,7 +33,7 @@ app.post("/", function (req, res) {
     var lname = req.body.last;
     var email = req.body.email;
     var username = "rmc3408";
-    var password = "f0679f27a55fd90412b5ef954423874b-us18";
+    var password = "f0679f27a55fd90412b5ef954423874b-<4CODE>";
     var auth = username + " " + password;
     
 
@@ -72,7 +72,7 @@ app.post("/", function (req, res) {
     request(option, function (error, response, body) {
         console.log(response.statusCode);
         if (error == 401) {
-            res.send("<h1>401 - Authetication Error</h1>");
+            res.send("<h1>Authetication Error - Change FOUR Characters CODE to us18</h1>");
         
         } else if (response.statusCode == 200) {
             res.sendFile(__dirname+"/sucess.html");
