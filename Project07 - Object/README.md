@@ -21,6 +21,19 @@ var cleaner1 = {
     languages: ['BR', 'EN']
 };
 
+## Objects from HTML
+--------------------
+* Any element tag from HTML has properties;
+``` <input type="text" name="lastName" value="Coelho"> ```
+
+* When create object from HTML tag using NAME and VALUE.
+  * Name = key 
+  * value = value
+``` 
+let cleaner3 = {
+        lastName:"Coelho"
+};
+```
 
 
 # Constructor Function 

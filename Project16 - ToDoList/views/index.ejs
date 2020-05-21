@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo-List</title>
-    <link rel="stylesheet" href="css/index.css">
-</head>
-
-<body>
-
+<%- include("header") -%> 
 
     <!-- To display output <%= %> inside HTML -->
     <!-- To NOT display output <% %>  inside HTML -->
 
     <div class="box" id="heading">
-        <% if (sevenDays == "Wednesday" || sevenDays == 'Saturday') {%>
-        <h1 class="box" style="color: yellowgreen;"> Display current day = <%=sevenDays%></h1>
+        <% if (ListTitle == "Wednesday" || ListTitle == 'Saturday') {%>
+        <h1 class="box" style="color: yellowgreen;"> Display current day = <%=ListTitle %></h1>
         <% } else {%>
-        <h1 style="color:lightblue;"><%=sevenDays%></h1>
+        <h1 style="color:lightblue;"><%=ListTitle%></h1>
         <% } %>
     </div>
     <!-- Make appear new input form -->
@@ -38,10 +27,8 @@
 
         <form class="item" action="/" method="post">
             <input type="text" name="newItem" placeholder="+ new item" autocomplete="off">
-            <button type="submit">+</button>
+            <button type="submit" name="buttonKey" value=<%=ListTitle%> >+</button>
         </form>
-    </div> 
+    </div>  
 
-</body>
-
-</html>
+<%- include("footer") -%>

@@ -16,60 +16,52 @@ app.use(express.static("public")); //for CSS, images file
 
 
 //? global variable = outside function//
-let newAddItems = ["WorkOut"]; 
-let newWorkItems = ["Computer"];
+let newAddItems = [""]; 
+let newWorkItems = [""];
 
 
 app.get("/", function (req, res) {
+     
     let today = new Date();
-    
-
     let option = {
         weekday: "long",
         day: "numeric",
         month: "long",
-        year: "numeric"
+        
     };
 
     let newday = today.toLocaleDateString("pt-BR", option);
-    res.render('index', { sevenDays: newday, task: newAddItems});
+    res.render('index', { ListTitle: newday, task: newAddItems});
     // newAddItem outside
 });
 
 app.post("/", function(req, res){
-    
-    item = req.body.newItem;
-    newAddItems.push(item);
-    res.redirect("/"); 
 //** newAddItem can acess function app.get (local variable) */
+//? YOU cannot run this, it will miss sevendays in app.get
+//? -> res.render('index', { task: taskItem });
 
-    //? YOU cannot run this, it will miss sevendays in app.get
-    //? -> res.render('index', { task: taskItem });
 
+// FORM WILL POST data info HERE (from "/" or "/work")
+    console.log(req.body); 
+    if (req.body.buttonKey == "WorkList") {
+        let item = req.body.newItem;
+        newWorkItems.push(item);
+        res.redirect("/work");
+
+    } else {
+        item = req.body.newItem;
+        newAddItems.push(item);
+        res.redirect("/");
+
+    }
 });
-
+ 
 app.get("/work", function (req, res) {
-    let today = new Date();
-     
-    let option = {
-        weekday: "long",
-        day: "numeric",
-                
-    };
-
-    let newday = today.toLocaleDateString("pt-BR", option);
-    res.render('work', { workDays: newday, task: newWorkItems});
-    // newAddItem outside
-});
-
-app.post("/work", function(req, res){
+    res.render('index', { ListTitle: "WorkList", task: newWorkItems});
     
-    item = req.body.newItem;
-    newWorkItems.push(item);
-    res.redirect("/work"); 
-//** newWorkItem can acess function app.get(/work) (to get local variable) */
-
-    //? YOU cannot run this, it will miss sevendays in app.get
-    //? -> res.render('index', { task: taskItem });
-
 });
+
+
+
+ 
+
