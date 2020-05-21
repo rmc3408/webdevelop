@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo-List</title>
+    <title>Work-List</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -15,10 +15,10 @@
     <!-- To NOT display output <% %>  inside HTML -->
 
     <div class="box" id="heading">
-        <% if (sevenDays == "Wednesday" || sevenDays == 'Saturday') {%>
-        <h1 class="box" style="color: yellowgreen;"> Display current day = <%=sevenDays%></h1>
+        <% if (workDays == "Wednesday" || workDays == 'Saturday') {%>
+        <h1 class="box" style="color: yellowgreen;"> Working day = <%=workDays%></h1>
         <% } else {%>
-        <h1 style="color:lightblue;"><%=sevenDays%></h1>
+        <h1 style="color:lightblue;"><%=workDays%></h1>
         <% } %>
     </div>
     <!-- Make appear new input form -->
@@ -36,7 +36,7 @@
         <% }); %>
 
 
-        <form class="item" action="/" method="post">
+        <form class="item" action="/work" method="post">
             <input type="text" name="newItem" placeholder="+ new item" autocomplete="off">
             <button type="submit">+</button>
         </form>
