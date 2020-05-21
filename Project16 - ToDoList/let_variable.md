@@ -1,4 +1,31 @@
 
+CONST
+----
+
+If declares CONST to variable = not change number.
+``` const a = 5; ```
+
+But if declare CONST to [array]. The elements assign at beginning won't change. BUT you can Add new value.
+
+``` 
+const a = [5];
+a.push(6); //Output: a = [5,6]
+a = [20];  // error!
+
+```
+
+Same to Objects => You can change value in key name. 
+You can NOT change the key name. 
+
+``` 
+const MyObj = {'key':"value'};
+
+MyObj = {'otherkey':"value'}; //ERROR
+MyObj.key = 'Value2'; // Ok!
+```
+
+
+
 LET
 ----
 

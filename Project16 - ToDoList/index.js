@@ -4,6 +4,19 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 
+//** LOCAL MODULE */
+
+const date = require(__dirname+"/date.js");
+
+let hojeOne = date.getShortDate();
+console.log(hojeOne); // Output: Short format of Todays.
+
+let hojeTwo = date.getFullDate();
+console.log(hojeTwo); // Output: Full format of Todays 
+// Print Or you can insert as value in property.
+
+//** LOCAL MODULE */
+
 app.use(bodyParser.urlencoded({extended: true}));
 
 
