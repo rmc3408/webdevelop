@@ -32,6 +32,8 @@ app.set('view engine', 'ejs');
 
 
 app.get("/",  function(req, res){ //home route
+
+    let formInput = req.body.title;
     res.render('home', option ); //just filename, no extension.
 });
 
@@ -45,7 +47,17 @@ app.get("/contact",  function(req, res){ //home route
     res.render('contact', option ); //just filename, no extension.
 });
 
+app.get("/compose",  function(req, res){ //home route
+    res.render('compose'); //just filename, no extension.
+});
 
+app.post("/compose", (req,res) =>{
+    let titleInput = req.body.title;
+    let messageInput = req.body.message;
+    console.log(req.body);
+    res.redirect("/");
+
+});
 
 
 app.listen(3000, () => {

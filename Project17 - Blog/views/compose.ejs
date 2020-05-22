@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<h1>Compose</h1>
+<div class="panel-body user">
+    <form accept-charset="UTF-8" action="/compose" method="POST">
+        
+        <label class="label" for="title">Title</label>
+        <input class="form-control-lg" type="text" id="title" name="title" >
+        <label class="label" for="message">Write a message</label>
+        <textarea class="form-control counted" id="message" name="message" rows="5"></textarea>
+        <button class="btn btn-danger" name="publish" type="submit">Publish</button>
+    </form>
+</div>
+
+
+
+
+<%- include('partials/footer') %>

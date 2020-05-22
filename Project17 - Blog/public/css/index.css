@@ -181,3 +181,31 @@ h1 {
 	font-size: 1rem;
     color: #fff;
 }
+
+/*
+    Compose style section
+*/
+
+
+.user{
+    margin-left: 40px;
+}
+
+input{
+    width: 600px;
+    margin: 0 0 20px 0;
+}
+
+.counted {
+    width: 600px;
+    margin-bottom: 40px;
+}
+
+.label {
+    font-size: 2rem;
+    margin:0;
+    color: black;
+    text-align: left;
+    font-weight: bolder;
+    display: block;
+}
