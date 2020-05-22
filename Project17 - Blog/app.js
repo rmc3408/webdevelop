@@ -6,10 +6,12 @@ let aboutContent = "My name is Raphael, I live in Isabella St. My name is Raphae
 let contactContent = "My name is Raphael, I live in Isabella St. My email is rmc3408@protonmail.com and phone (647)838-9921 - My name is Raphael, I live in Isabella St. My email is rmc3408@protonmail.com and phone (647)838-9921 - My name is Raphael, I live in Isabella St. My email is rmc3408@protonmail.com and phone (647)838-9921";
 
 var option = {
-    pageContent: homeContent,
-    published: { postTitle: title, postMsg: message}
+    pageContent: homeContent
+    
              };
 
+let postsTitle = [];
+let postsMsg = [];
 
 /////////////////////////
 
@@ -33,9 +35,7 @@ app.set('view engine', 'ejs');
 
 
 app.get("/",  function(req, res){ //home route
-
-    let formInput = req.body.title;
-    res.render('home', option ); //just filename, no extension.
+    res.render('home', option); //just filename, no extension.
 });
 
 app.get("/about",  function(req, res){ //home route
@@ -53,8 +53,9 @@ app.get("/compose",  function(req, res){ //home route
 });
 
 app.post("/compose", (req,res) =>{
-    option.published.postTitle = req.body.title;
-    option.published.postMsg = req.body.message;
+    postsTitle.push(req.body.title);
+    postsMsg.push(req.body.message);
+
     console.log(req.body);
     res.redirect("/");
 

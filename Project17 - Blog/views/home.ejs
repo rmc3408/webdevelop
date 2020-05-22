@@ -3,6 +3,14 @@
     <h1>Home</h1>
     <p><%=pageContent%> </p>
 
+    <%= postsTitle.forEach(item => { %>
+        <h3><%=item%></h3>
+
+    <% }); %>
+    <%= postsMsg.forEach(item => { %>
+        <p><%=item %></p>
+    <% }) %>  
+
 
 
 <%- include('partials/footer') %> 
