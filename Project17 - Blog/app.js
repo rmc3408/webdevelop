@@ -7,7 +7,7 @@ let contactContent = "My name is Raphael, I live in Isabella St. My email is rmc
 
 var option = {
     pageContent: homeContent
-};
+             };
 
 
 /////////////////////////
@@ -32,9 +32,17 @@ app.set('view engine', 'ejs');
 
 
 app.get("/",  function(req, res){ //home route
-    
     res.render('home', option ); //just filename, no extension.
+});
 
+app.get("/about",  function(req, res){ //home route
+    option.pageContent = aboutContent;
+    res.render('about', option ); //just filename, no extension.
+});
+
+app.get("/contact",  function(req, res){ //home route
+    option.pageContent = contactContent;
+    res.render('contact', option ); //just filename, no extension.
 });
 
 
