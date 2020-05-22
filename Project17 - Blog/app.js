@@ -6,7 +6,8 @@ let aboutContent = "My name is Raphael, I live in Isabella St. My name is Raphae
 let contactContent = "My name is Raphael, I live in Isabella St. My email is rmc3408@protonmail.com and phone (647)838-9921 - My name is Raphael, I live in Isabella St. My email is rmc3408@protonmail.com and phone (647)838-9921 - My name is Raphael, I live in Isabella St. My email is rmc3408@protonmail.com and phone (647)838-9921";
 
 var option = {
-    pageContent: homeContent
+    pageContent: homeContent,
+    published: { postTitle: title, postMsg: message}
              };
 
 
@@ -52,8 +53,8 @@ app.get("/compose",  function(req, res){ //home route
 });
 
 app.post("/compose", (req,res) =>{
-    let titleInput = req.body.title;
-    let messageInput = req.body.message;
+    option.published.postTitle = req.body.title;
+    option.published.postMsg = req.body.message;
     console.log(req.body);
     res.redirect("/");
 
