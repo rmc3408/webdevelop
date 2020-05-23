@@ -3,8 +3,20 @@
     <h1>Home</h1>
     <p><%=pageContent%> </p>
 
+    <% posted.forEach(item => { %>
+    <% console.log(item.postedTitle); %>
+    <% }); %>
     
 
+    <%# for (let index = 0; index < posted.length; index++) { %>
+    <%#     let title = posted[index].postedTitle; %>
+    <%#     let msg = posted[index].postedMsg; %>
+    <%#     console.log("the title is "+ title+ " and message is "+ msg); }%>
+       
+    
+    <%# console.log(posted); %>
+
+    
 
 
 

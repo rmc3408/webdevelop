@@ -5,13 +5,13 @@ let homeContent = "This is a Home page of my WebBlog. This is a Home page of my 
 let aboutContent = "My name is Raphael, I live in Isabella St. My name is Raphael, I live in Isabella St. My name is Raphael, I live in Isabella St. My name is Raphael, I live in Isabella St. My name is Raphael, I live in Isabella St. ";
 let contactContent = "My name is Raphael, I live in Isabella St. My email is rmc3408@protonmail.com and phone (647)838-9921 - My name is Raphael, I live in Isabella St. My email is rmc3408@protonmail.com and phone (647)838-9921 - My name is Raphael, I live in Isabella St. My email is rmc3408@protonmail.com and phone (647)838-9921";
 
-var option = {
-    pageContent: homeContent
-    
-             };
 
 let posts = [];
 
+var option = {
+    pageContent: homeContent,
+    posted: posts
+             };
 
 /////////////////////////
 
@@ -29,7 +29,7 @@ app.set('view engine', 'ejs');
 
 
 app.get("/",  function(req, res){ //home route
-    console.log(posts);
+    
     res.render('home', option); //just filename, no extension.
 });
 
