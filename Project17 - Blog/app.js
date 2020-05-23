@@ -10,8 +10,8 @@ var option = {
     
              };
 
-let postsTitle = [];
-let postsMsg = [];
+let posts = [];
+
 
 /////////////////////////
 
@@ -28,14 +28,19 @@ app.set('view engine', 'ejs');
 
 
 
-
-
-
-
-
-
 app.get("/",  function(req, res){ //home route
     res.render('home', option); //just filename, no extension.
+});
+
+
+
+app.post("/compose", (req,res) =>{
+    let postedTitle = req.body.title;
+    let postedMsg = req.body.message;
+
+    console.log(req.body);
+    res.redirect("/");
+
 });
 
 app.get("/about",  function(req, res){ //home route
@@ -51,16 +56,6 @@ app.get("/contact",  function(req, res){ //home route
 app.get("/compose",  function(req, res){ //home route
     res.render('compose'); //just filename, no extension.
 });
-
-app.post("/compose", (req,res) =>{
-    postsTitle.push(req.body.title);
-    postsMsg.push(req.body.message);
-
-    console.log(req.body);
-    res.redirect("/");
-
-});
-
 
 app.listen(3000, () => {
     console.log("Server running on port 3000");
