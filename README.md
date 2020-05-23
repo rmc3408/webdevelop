@@ -100,3 +100,6 @@ https://pixabay.com/
 Favicon --->
 https://www.favicon.cc/
 https://fontawesome.com/
+
+Lorem ipsum
+https://loremipsum.io/

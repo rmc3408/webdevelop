@@ -4,7 +4,8 @@
     <p><%=pageContent%> </p>
 
     <% posted.forEach(item => { %>
-    <% console.log(item.postedTitle); %>
+        <h3><%=item.postedTitle%></h3>
+        <p class="main"><%= item.postedMsg %> </p>
     <% }); %>
     
 
@@ -12,13 +13,7 @@
     <%#     let title = posted[index].postedTitle; %>
     <%#     let msg = posted[index].postedMsg; %>
     <%#     console.log("the title is "+ title+ " and message is "+ msg); }%>
-       
-    
+   
     <%# console.log(posted); %>
-
-    
-
-
-
 
 <%- include('partials/footer') %> 

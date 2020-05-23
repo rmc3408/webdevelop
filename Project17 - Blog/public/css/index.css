@@ -149,11 +149,14 @@ a.nav-link {
 * Page Content style
 */
 
-h1 {
+h1, h3 {
     padding: 40px 0 20px 40px;
     color: red;
 }
 .main p {
+    padding: 20px 40px 20px 40px;
+}
+.main p:last-child {
     padding: 20px 40px 80px 40px;
 }
 
