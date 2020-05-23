@@ -43,7 +43,6 @@ app.post("/compose", (req,res) =>{
     posts.push(post);
     res.redirect("/");
     
-
 });
 
 app.get("/about",  function(req, res){ //home route
