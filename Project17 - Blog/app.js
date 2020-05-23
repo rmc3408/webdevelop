@@ -29,17 +29,20 @@ app.set('view engine', 'ejs');
 
 
 app.get("/",  function(req, res){ //home route
+    console.log(posts);
     res.render('home', option); //just filename, no extension.
 });
 
 
 
 app.post("/compose", (req,res) =>{
-    let postedTitle = req.body.title;
-    let postedMsg = req.body.message;
-
-    console.log(req.body);
+    const post = {
+        postedTitle: req.body.title,
+        postedMsg: req.body.message
+                };
+    posts.push(post);
     res.redirect("/");
+    
 
 });
 
