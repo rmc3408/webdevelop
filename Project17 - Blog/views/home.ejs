@@ -5,7 +5,8 @@
 
     <% posted.forEach(item => { %>
         <h3><%=item.postedTitle%></h3>
-        <p class="main"><%= item.postedMsg %> </p>
+        <p class="main"><%= item.postedMsg.substring(0, 100) + " ..." %> </p>
+        <a href="/post/<%=item.postedTitle%>">Read More</a>
     <% }); %>
     
     <%# for (let index = 0; index < posted.length; index++) { %>
