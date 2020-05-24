@@ -8,3 +8,8 @@
 3. EJS
 
 ####
+
+array.forEach(item => { console.log(item);  });
+
+Express route params
+---------------
