@@ -4,7 +4,7 @@
 let homeContent = "This is a Home page of my WebBlog. This is a Home page of my WebBlog. This is a Home page of my WebBlog. This is a Home page of my WebBlog. This is a Home page of my WebBlog. This is a Home page of my WebBlog. ";
 let aboutContent = "My name is Raphael, I live in Isabella St. My name is Raphael, I live in Isabella St. My name is Raphael, I live in Isabella St. My name is Raphael, I live in Isabella St. My name is Raphael, I live in Isabella St. ";
 let contactContent = "My name is Raphael, I live in Isabella St. My email is rmc3408@protonmail.com and phone (647)838-9921 - My name is Raphael, I live in Isabella St. My email is rmc3408@protonmail.com and phone (647)838-9921 - My name is Raphael, I live in Isabella St. My email is rmc3408@protonmail.com and phone (647)838-9921";
-
+var _ = require('lodash');
 
 let posts = [];
 
@@ -34,7 +34,24 @@ app.get("/",  function(req, res){ //home route
 });
 
 app.get("/post/:topic", function(req, res){ //express route use :
-    console.log(req.params.topic); //params is object, topic is key
+    
+    posts.forEach(post => {
+        console.log(_.lowerCase(req.params.topic));
+        console.log(_.lowerCase(post.postedTitle));
+        
+        if (_.lowerCase(req.params.topic) == _.lowerCase(post.postedTitle)){
+            console.log("matched found");
+            
+        }
+    } );
+
+    // It will compare only first object ( post[0]).
+    // if (req.params.topic == option.posted[0].postedTitle){
+    //    console.log("matched found");
+    // }else {}
+
+    //params is object, topic is key, output value of key
+    //console.log(req.params.topic); 
 });
 
 app.post("/compose", (req,res) =>{
