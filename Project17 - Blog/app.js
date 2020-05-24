@@ -33,7 +33,9 @@ app.get("/",  function(req, res){ //home route
     res.render('home', option); //just filename, no extension.
 });
 
-
+app.get("/post/:topic", function(req, res){ //express route use :
+    console.log(req.params.topic); //params is object, topic is key
+});
 
 app.post("/compose", (req,res) =>{
     const post = {
