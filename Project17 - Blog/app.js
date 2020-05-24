@@ -41,6 +41,7 @@ app.get("/post/:topic", function(req, res){ //express route use :
         
         if (_.lowerCase(req.params.topic) == _.lowerCase(post.postedTitle)){
             console.log("matched found");
+            res.render('post', {actualTitle:post.postedTitle, actualMsg: post.postedMsg });
             
         }
     } );
@@ -52,6 +53,9 @@ app.get("/post/:topic", function(req, res){ //express route use :
 
     //params is object, topic is key, output value of key
     //console.log(req.params.topic); 
+
+    
+
 });
 
 app.post("/compose", (req,res) =>{
