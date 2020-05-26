@@ -1,0 +1,14 @@
+{
+  "name": "fruitmongo",
+  "version": "1.0.0",
+  "description": "--------",
+  "main": "fruits.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.5.7"
+  }
+}
