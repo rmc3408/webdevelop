@@ -104,3 +104,51 @@ db.products.updateOne({id:1}, {$set: {stock: 32} })
 db.products.deleteOne({stock:12}) 
 
 ```
+
+#### Relatioship
+
+One inside the other. its like Join
+
+```
+{
+    id:3,
+    name:"Pencil",
+    price:0.80,
+    stock:12,
+    reviews:[{
+        authorName:"John",
+        rating:4,
+        review:"Good"
+      },{
+        authorName:"Anne",
+        rating:2,
+        review:"Poor"
+        }]
+}
+```
+
+#### Other format Relatioship 
+
+- This is another format to show CROSS Join
+
+For each ID (using underscore).
+
+Same price, using productOrdered: [1,2]
+
+``
+{
+  _id:1,
+  stock: 32
+}
+
+{
+  _id:2,
+  stock: 43
+}
+
+{
+  price: 0.80,
+  productsOrdered: [1, 2]
+}
+
+``

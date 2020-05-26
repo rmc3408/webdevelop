@@ -1,0 +1,15 @@
+({
+    id:3,
+    name:"Pencil",
+    price:0.80,
+    stock:12,
+    reviews:[{
+        authorName:"John",
+        rating:4,
+        review:"Good"
+      },{
+        authorName:"Anne",
+        rating:2,
+        review:"Poor"
+        }]
+ })
