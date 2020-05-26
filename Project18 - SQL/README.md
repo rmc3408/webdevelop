@@ -38,11 +38,29 @@ db.products.insertOne( { id:1, name:"Pen", price:1.20 })
 
 ```
 
-#### Read collection = find()
+#### Read collection = find( query, projections)
 
-db.collection.find()   
+db.collection.find( query )   
 
 ```
-db.products.find( { id:1, name:"Pen", price:1.20 })
+db.products.find( {name:"Pen"})
+
+```
+
+### Query operators and  projection selectors.
+
+* query is the condition = WHERE.
+
+```
+db.products.find( price: {$gt:1} )
+
+```
+
+* Projection = Only return that Key.
+  * 1 or true to include the field in the return documents.
+  * 0 or false to exclude the field.
+
+```
+db.products.find(price: 0.80, {id:1} )
 
 ```
