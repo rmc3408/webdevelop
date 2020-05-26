@@ -61,6 +61,6 @@ db.products.find( price: {$gt:1} )
   * 0 or false to exclude the field.
 
 ```
-db.products.find(price: 0.80, {id:1} )
+db.products.find(price: 0.80, {id:0, name:1} )
 
 ```
