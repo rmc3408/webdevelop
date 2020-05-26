@@ -14,7 +14,12 @@
   - expressJS (via NPM install -g)
   - nodemon (via NPM install -g)
 * JSON viewer Awesome
+* MongoDB server (+ to path = .bash_profile)
 
+
+
+### MongoDB
+https://www.mongodb.com/
 
 
 ### EJS
