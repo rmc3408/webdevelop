@@ -78,3 +78,13 @@ db.products.find(price: 0.80, {id:0, name:1} )
 db.products.updateOne({id:1}, {$set: {stock: 32} })
 
 ```
+
+
+#### Delete Collection = DeleteOne(query)
+
+- query is WHERE is located. Must be between {}.
+
+```
+db.products.deleteOne({stock:12}) 
+
+```
