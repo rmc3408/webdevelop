@@ -1,14 +1,16 @@
 # SQL
 --------
 
-## SQL
+### SQL Commands
 1. CREATE TABLE ... FROM
 2. SELECT ... FROM
 3. INSERT INTO .... VALUES
 4. UPDATE .... SET .... WHERE ..
 5. DELETE FROM .... WHERE.
 
-## Mongo DB - NoSQL
+
+# Mongo DB - NoSQL
+-----------------
 
 - download mongoDB Server (no cloud);
 - DO NOT install mongo compass;
@@ -19,8 +21,8 @@
 
 
 
+
 ### Mongo Commands
---------------
 
 * help
 * show dbs
@@ -29,6 +31,20 @@
 * use __to create__
 * db __to see current working db__
 
+__Dictionary__
+
+[SQL Comparasion](https://docs.mongodb.com/manual/reference/sql-comparison/)
+
+
+db              = database
+collection      = table
+field           = collumn
+row             = document
+embedded doc    = joinTable
+primary key     = primary key
+
+Database Server = mongod
+Database Client = mongo
 
 
 #### create collection ( In NoSQL is not table, is collections)
