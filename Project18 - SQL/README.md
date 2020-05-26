@@ -24,8 +24,12 @@
 
 * help
 * show dbs
+* show collections
+* show users
 * use __to create__
 * db __to see current working db__
+
+
 
 #### create collection ( In NoSQL is not table, is collections)
 
@@ -47,9 +51,9 @@ db.products.find( {name:"Pen"})
 
 ```
 
-### Query operators and  projection selectors.
+#### Query operators and  projection selectors.
 
-* query is the condition = WHERE.
+  * query is the condition = WHERE.
 
 ```
 db.products.find( price: {$gt:1} )
@@ -62,5 +66,15 @@ db.products.find( price: {$gt:1} )
 
 ```
 db.products.find(price: 0.80, {id:0, name:1} )
+
+```
+
+#### Update Collection = Update(query, update)
+
+- query is WHERE is located. Must be between {}.
+- update = {$SET: {key:value}}
+
+```
+db.products.updateOne({id:1}, {$set: {stock: 32} })
 
 ```
