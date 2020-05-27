@@ -105,6 +105,17 @@ db.products.deleteOne({stock:12})
 
 ```
 
+#### Delete Database = dropDatabase()
+
+- Before delete, select which database by using `use fruit`.
+
+```
+db.products.dropDatabase() 
+
+```
+
+
+
 #### Relatioship
 
 One inside the other. its like Join
@@ -152,6 +163,30 @@ Same price, using productOrdered: [1,2]
 }
 
 ``
+
+### Mongoose for Node.js
+------------------------------
+
+1. npm init
+2. npm install mongoose
+3. Create app.js file and connection commands.
+
+__BASIC STEPS__
+  1. Create connect with URL
+  2. Create Schema (struture of column and data types)
+  3. Create Model ("Collection name", Schema)
+  4. Create ONE person and give Object values details
+    4.1 - More than one, use InsertMany([ ]);
+    
+  5. personONE.save()
+
+ 
+
+
+
+
+
+
 
 ### Mongo Driver for Node.js
 ------------------------------
