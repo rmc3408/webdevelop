@@ -57,9 +57,9 @@ var personTwo = new personModel({
 
 
 personOne.save();
- 
+personOne.close(); 
 
-
+/*
 //////////////////////////
 personModel.insertMany([personOne, personTwo], function(error, dataAdded) {
     if(error){
@@ -83,7 +83,7 @@ fruitModel.find(function(err,docs) {
     }
 
 });
-/*8888888888888888888888888*/
+
 
 
 /******* INSERT MULTIPLE OBJECTS AND FIND *******************/
@@ -127,3 +127,5 @@ fruitModel.find(function(err, docs){ //! docs (final object is array)
     }
 });
 /*******************************************/
+
+*/
