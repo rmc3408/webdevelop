@@ -57,7 +57,7 @@ var personTwo = new personModel({
 
 
 personOne.save();
-personOne.close(); 
+ 
 
 /*
 //////////////////////////
@@ -87,6 +87,8 @@ fruitModel.find(function(err,docs) {
 
 
 /******* INSERT MULTIPLE OBJECTS AND FIND *******************/
+
+/*
 const apple = new fruitModel({ //! document 01
     name: "Apple", 
     rating: 9,
@@ -128,4 +130,3 @@ fruitModel.find(function(err, docs){ //! docs (final object is array)
 });
 /*******************************************/
 
-*/
