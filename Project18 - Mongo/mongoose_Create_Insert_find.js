@@ -21,9 +21,6 @@ const fruit = new fruitModel({ //! Document
     review: "Good taste"
 });
 
-
-
-
 fruit.save();
 
 //TODO: To read. 
@@ -59,12 +56,12 @@ var personTwo = new personModel({
 
 
 
-//? personOne.save();
+personOne.save();
  
 
 
 //////////////////////////
-/*personModel.insertMany([personOne, personTwo], function(error, dataAdded) {
+personModel.insertMany([personOne, personTwo], function(error, dataAdded) {
     if(error){
         console.log(error);
     } else {
@@ -86,4 +83,47 @@ fruitModel.find(function(err,docs) {
     }
 
 });
-*/
+/*8888888888888888888888888*/
+
+
+/******* INSERT MULTIPLE OBJECTS AND FIND *******************/
+const apple = new fruitModel({ //! document 01
+    name: "Apple", 
+    rating: 9,
+    review: "Good taste"
+});
+
+const kiwi = new fruitModel({ //! document 02
+    name: "Kiwi", 
+    rating: 6,
+    review: "Regular taste"
+});
+
+const banana = new fruitModel({ //! Document 03
+    name: "Banana", 
+    rating: 1,
+    review: "Good taste"
+});
+
+fruitModel.insertMany([kiwi, apple, banana], function(err, docs){
+    if(err){
+        console.log(err);
+    }else {
+        console.log("Successful Added!");
+        console.log(docs);
+    }
+});
+
+
+fruitModel.find(function(err, docs){ //! docs (final object is array)
+    if(err){
+        console.log(err);
+    }else {
+        docs.forEach(function (item) {
+            console.log(item.name);
+        });
+    mongoose.connection.close();
+        
+    }
+});
+/*******************************************/
