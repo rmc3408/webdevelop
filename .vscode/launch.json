@@ -4,19 +4,31 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-    {
-        "type": "chrome",
-        "request": "launch",
-        "name": "index.html",
-        "file": "${workspaceFolder}/Project09 - SimomGame/index.html"
-        
-    },
-    {
-        "name": "debug.html",
-        "type": "chrome",
-        "request": "launch",
-        "file": "${workspaceFolder}/Project06 - Debugging/debug.html"
-    },
-    
-                        ]
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - week1",
+            "request": "launch",
+            "mainClass": "week1",
+            "projectName": "webdevelop_fdfa2fff"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Welcome1",
+            "request": "launch",
+            "mainClass": "Welcome1",
+            "projectName": "webdevelop_fdfa2fff"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "index.html",
+            "file": "${workspaceFolder}/Project09 - SimomGame/index.html"
+        },
+        {
+            "name": "debug.html",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceFolder}/Project06 - Debugging/debug.html"
+        }
+    ]
 }
