@@ -1,0 +1,34 @@
+<%- include("header") -%> 
+
+    <!-- To display output <%= %> inside HTML -->
+    <!-- To NOT display output <% %>  inside HTML -->
+
+    <div class="box" id="heading">
+        <% if (ListTitle == "Wednesday" || ListTitle == 'Saturday') {%>
+        <h1 class="box" style="color: yellowgreen;"> Display current day = <%=ListTitle %></h1>
+        <% } else {%>
+        <h1 style="color:lightblue;"><%=ListTitle%></h1>
+        <% } %>
+    </div>
+    <!-- Make appear new input form -->
+
+    <div class="box">
+        
+        <% task.forEach(item => { %>
+        <div class="item">
+
+            <!--  <p>Array of new item : <%=task%></p>    -->
+            <input type="checkbox">
+            <p><%=item%></p>
+
+        </div>
+        <% }); %>
+
+
+        <form class="item" action="/" method="post">
+            <input type="text" name="newItem" placeholder="+ new item" autocomplete="off">
+            <button type="submit" name="buttonKey" value=<%=ListTitle%> >+</button>
+        </form>
+    </div>  
+
+<%- include("footer") -%>
