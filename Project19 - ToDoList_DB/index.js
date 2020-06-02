@@ -3,34 +3,29 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-
-//** LOCAL MODULE */
-
-const date = require(__dirname+"/date.js");
-
-let hojeOne = date.getShortDate();
-console.log(hojeOne); // Output: Short format of Todays.
-
-let hojeTwo = date.getFullDate();
-console.log(hojeTwo); // Output: Full format of Todays 
-// Print Or you can insert as value in property.
-
-//** LOCAL MODULE */
-
 app.use(bodyParser.urlencoded({extended: true}));
-
+app.set('view engine', 'ejs');
+app.use(express.static("public"));
 
 app.listen(3000, function () {
     console.log("server running on port 3000");
 });
 
-app.set('view engine', 'ejs');
-app.use(express.static("public")); //for CSS, images file
 
-
-//? global variable = outside function//
 let newAddItems = ["Buy Food"]; 
 let newWorkItems = ["Computer"];
+
+
+//** CONNECT DATABASE - mongoose */
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/tdlistDB', {useNewUrlParser: true});
+
+var itemsSchema = new mongoose.Schema({
+    name: String
+});
+
+var itemsModel = new mongoose.model("itemDB", itemsSchema);
+
 
 
 app.get("/", function (req, res) {
