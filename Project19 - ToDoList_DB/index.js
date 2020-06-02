@@ -12,44 +12,56 @@ app.listen(3000, function () {
 });
 
 
-let newAddItems = ["Buy Food"]; 
-let newWorkItems = ["Computer"];
-
 
 //** CONNECT DATABASE - mongoose */
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/tdlistDB', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/tdlistDB', { useUnifiedTopology: true, useNewUrlParser: true});
 
-var itemsSchema = new mongoose.Schema({
+const itemsSchema = new mongoose.Schema({
     name: String
 });
 
-var itemsModel = new mongoose.model("itemDB", itemsSchema);
+const itemsModel = new mongoose.model("itemDB", itemsSchema);
+
+let new01 = new itemsModel({
+    name: "Pencil"
+});
+
+let new02 = new itemsModel({
+    name: "rubber"
+});
+
+let new03 = new itemsModel({
+    name: "paper"
+});
+
+var newItems = [];
+
+itemsModel.insertMany([new01, new02, new03], function(e, docs){
+    if (e){
+        console.log(e);
+    }
+    else{
+        console.log(docs);
+    }
+} );
+
+
 
 
 
 app.get("/", function (req, res) {
      
-    let today = new Date();
-    let option = {
-        weekday: "long",
-        day: "numeric",
-        month: "long",
-        
-    };
 
-    let newday = today.toLocaleDateString("pt-BR", option);
-    res.render('index', { ListTitle: newday, task: newAddItems});
-    // newAddItem outside
+    res.render('index', { ListTitle: "Today", task: newAddItems});
+    
 });
 
+
 app.post("/", function(req, res){
-//** newAddItem can acess function app.get (local variable) */
-//? YOU cannot run this, it will miss sevendays in app.get
-//? -> res.render('index', { task: taskItem });
 
 
-// FORM WILL POST data info HERE (from "/" or "/work")
+
     console.log(req.body); 
     if (req.body.buttonKey == "WorkList") {
         let item = req.body.newItem;
