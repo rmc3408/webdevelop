@@ -19,7 +19,7 @@ document.addEventListener('keydown', function () {
 
 function gameSequence() {
 
-    $('h1').text("Level " + (level + 1));
+    $('h2').text("Level " + (level + 1));
     var randomChosenColour = nextSequence();
     gamePattern.push(randomChosenColour);
     $("." + randomChosenColour).fadeOut(200).fadeIn(200);
@@ -70,13 +70,13 @@ function comparePattern(item, index) { // check items inside arrays.
         if (userPattern.length == gamePattern.length) {
 
             level++;
-            $('h1').text("Wait for next sequence");
+            $('h2').text("Wait for next sequence");
             userPattern = [];
             setTimeout(gameSequence, 2000);
 
         }
     } else {
-        $('h1').text("Game Over");
+        $('h2').text("Game Over");
         $(document.body).css("background-color", 'red');
 
     }

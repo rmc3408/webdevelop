@@ -6,9 +6,19 @@ body {
 #level-title {
   font-family: 'Courier New', Courier, monospace;
   font-size: 3rem;
-  margin:  5%;
+  margin: 2% 5% 2% 5%;
   color: #FEF2BF;
 }
+#top-title {
+  font-size: 8rem;
+  margin-left: 30%;
+  margin-right: 30%;
+  background-image: linear-gradient(to left, blue, green, yellow, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 
 .container {
   display: block;
